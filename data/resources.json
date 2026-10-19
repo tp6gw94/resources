@@ -1,0 +1,2720 @@
+{
+  "categories": [
+    {
+      "id": "AI-CODE",
+      "name": "AI Coding & Skills"
+    },
+    {
+      "id": "AI-APPS",
+      "name": "AI Apps & Automation"
+    },
+    {
+      "id": "AI-ENG",
+      "name": "LLM & AI Engineering"
+    },
+    {
+      "id": "FRONTEND",
+      "name": "Frontend & UI"
+    },
+    {
+      "id": "DEV",
+      "name": "Dev Tools & Testing"
+    },
+    {
+      "id": "EMACS",
+      "name": "Emacs"
+    },
+    {
+      "id": "NVIM",
+      "name": "Neovim & Vim"
+    },
+    {
+      "id": "EDITORS",
+      "name": "Editors & LSP"
+    },
+    {
+      "id": "CLI",
+      "name": "CLI & Terminal"
+    },
+    {
+      "id": "NOTES",
+      "name": "Notes & Publishing"
+    },
+    {
+      "id": "DESKTOP",
+      "name": "Desktop & OS"
+    },
+    {
+      "id": "INFRA",
+      "name": "Infra & Self-hosting"
+    },
+    {
+      "id": "LEARN",
+      "name": "CS & Learning"
+    },
+    {
+      "id": "DESIGN",
+      "name": "Design & Media"
+    }
+  ],
+  "resources": [
+    {
+      "repo": "0xGF/boneyard",
+      "url": "https://github.com/0xGF/boneyard",
+      "category": "FRONTEND",
+      "description": "Auto generated skeleton loading framework."
+    },
+    {
+      "repo": "1broseidon/ketch",
+      "url": "https://github.com/1broseidon/ketch",
+      "category": "CLI",
+      "description": "Fast, stateless CLI for web search and scrape. Built for AI agents."
+    },
+    {
+      "repo": "200ok-ch/organice",
+      "url": "https://github.com/200ok-ch/organice",
+      "category": "NOTES",
+      "description": "An implementation of Org mode without the dependency of Emacs - built for mobile and desktop browsers."
+    },
+    {
+      "repo": "3rd/image.nvim",
+      "url": "https://github.com/3rd/image.nvim",
+      "category": "NVIM",
+      "description": "Bringing images to Neovim."
+    },
+    {
+      "repo": "47ng/nuqs",
+      "url": "https://github.com/47ng/nuqs",
+      "category": "FRONTEND",
+      "description": "Type-safe search params state manager for React frameworks - Like useState, but stored in the URL query string."
+    },
+    {
+      "repo": "a2aproject/A2A",
+      "url": "https://github.com/a2aproject/A2A",
+      "category": "AI-ENG",
+      "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications."
+    },
+    {
+      "repo": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "category": "AI-APPS",
+      "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM."
+    },
+    {
+      "repo": "abo-abo/swiper",
+      "url": "https://github.com/abo-abo/swiper",
+      "category": "EMACS",
+      "description": "Ivy - a generic completion frontend for Emacs, Swiper - isearch with an overview, and more. Oh, man!"
+    },
+    {
+      "repo": "abue-ammar/tinycast",
+      "url": "https://github.com/abue-ammar/tinycast",
+      "category": "DESKTOP",
+      "description": "Tinycast \u2014 a tiny, fully native macOS launcher, hotkeys, and clipboard history."
+    },
+    {
+      "repo": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "category": "AI-CODE",
+      "description": "Production-grade engineering skills for AI coding agents."
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "category": "AI-CODE",
+      "description": "Skills, memory, and workflow tools for coding agents."
+    },
+    {
+      "repo": "agentskills/agentskills",
+      "url": "https://github.com/agentskills/agentskills",
+      "category": "AI-CODE",
+      "description": "Specification and documentation for Agent Skills."
+    },
+    {
+      "repo": "Aider-AI/aider",
+      "url": "https://github.com/Aider-AI/aider",
+      "category": "AI-CODE",
+      "description": "aider is AI pair programming in your terminal."
+    },
+    {
+      "repo": "ajeetdsouza/zoxide",
+      "url": "https://github.com/ajeetdsouza/zoxide",
+      "category": "CLI",
+      "description": "A smarter cd command. Supports all major shells."
+    },
+    {
+      "repo": "akinsho/toggleterm.nvim",
+      "url": "https://github.com/akinsho/toggleterm.nvim",
+      "category": "NVIM",
+      "description": "A neovim lua plugin to help easily manage multiple terminal windows."
+    },
+    {
+      "repo": "alacritty/alacritty",
+      "url": "https://github.com/alacritty/alacritty",
+      "category": "CLI",
+      "description": "A cross-platform, OpenGL terminal emulator."
+    },
+    {
+      "repo": "alan2207/bulletproof-react",
+      "url": "https://github.com/alan2207/bulletproof-react",
+      "category": "LEARN",
+      "description": "A simple, scalable, and powerful architecture for building production ready React applications."
+    },
+    {
+      "repo": "Alexays/Waybar",
+      "url": "https://github.com/Alexays/Waybar",
+      "category": "DESKTOP",
+      "description": "Highly customizable Wayland bar for Sway and Wlroots based compositors. \u270c\ufe0f \ud83c\udf89."
+    },
+    {
+      "repo": "alexpasmantier/television",
+      "url": "https://github.com/alexpasmantier/television",
+      "category": "CLI",
+      "description": "A very fast, portable and hackable fuzzy finder."
+    },
+    {
+      "repo": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "category": "DEV",
+      "description": "Code review tooling combining deterministic analysis with LLM agents."
+    },
+    {
+      "repo": "alibaba/page-agent",
+      "url": "https://github.com/alibaba/page-agent",
+      "category": "AI-ENG",
+      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language."
+    },
+    {
+      "repo": "alvinunreal/oh-my-opencode-slim",
+      "url": "https://github.com/alvinunreal/oh-my-opencode-slim",
+      "category": "AI-CODE",
+      "description": "Lean, fine tuned Opencode multi agent suite \u00b7 Mix any models \u00b7 Auto delegate tasks."
+    },
+    {
+      "repo": "AndyShiue/learning-rust-from-zero",
+      "url": "https://github.com/AndyShiue/learning-rust-from-zero",
+      "category": "LEARN",
+      "description": "A Traditional Chinese Rust tutorial for beginners."
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "category": "AI-CODE",
+      "description": "The open source coding agent."
+    },
+    {
+      "repo": "anomalyco/sst",
+      "url": "https://github.com/anomalyco/sst",
+      "category": "INFRA",
+      "description": "Build full-stack apps on your own infrastructure."
+    },
+    {
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "category": "AI-CODE",
+      "description": "Public repository for Agent Skills."
+    },
+    {
+      "repo": "AppFlowy-IO/AppFlowy",
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "category": "NOTES",
+      "description": "An open-source workspace for notes, projects, and team knowledge."
+    },
+    {
+      "repo": "apprenticeharper/DeDRM_tools",
+      "url": "https://github.com/apprenticeharper/DeDRM_tools",
+      "category": "NOTES",
+      "description": "DeDRM tools for ebooks."
+    },
+    {
+      "repo": "artempyanykh/marksman",
+      "url": "https://github.com/artempyanykh/marksman",
+      "category": "EDITORS",
+      "description": "Write Markdown with code assist and intelligence in the comfort of your favourite editor."
+    },
+    {
+      "repo": "arxanas/git-branchless",
+      "url": "https://github.com/arxanas/git-branchless",
+      "category": "DEV",
+      "description": "High-velocity, monorepo-scale workflow for Git."
+    },
+    {
+      "repo": "ast-grep/ast-grep",
+      "url": "https://github.com/ast-grep/ast-grep",
+      "category": "DEV",
+      "description": "A CLI tool for code structural search, lint and rewriting. Written in Rust."
+    },
+    {
+      "repo": "AsyncFuncAI/deepwiki-open",
+      "url": "https://github.com/AsyncFuncAI/deepwiki-open",
+      "category": "AI-APPS",
+      "description": "Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme."
+    },
+    {
+      "repo": "atiladefreitas/dooing",
+      "url": "https://github.com/atiladefreitas/dooing",
+      "category": "NVIM",
+      "description": "The minimalist to-do list for Neovim."
+    },
+    {
+      "repo": "avante-corp/avante.nvim",
+      "url": "https://github.com/avante-corp/avante.nvim",
+      "category": "NVIM",
+      "description": "Use your Neovim like using Cursor AI IDE!"
+    },
+    {
+      "repo": "aviator-co/av",
+      "url": "https://github.com/aviator-co/av",
+      "category": "DEV",
+      "description": "A command line tool to manage stacked PRs with Aviator."
+    },
+    {
+      "repo": "awslabs/cli-agent-orchestrator",
+      "url": "https://github.com/awslabs/cli-agent-orchestrator",
+      "category": "AI-CODE",
+      "description": "Multi-agent orchestration for AI coding CLIs \u2014 Claude Code, Kiro, Codex, and more, coordinated in isolated tmux sessions."
+    },
+    {
+      "repo": "awth13/org-appear",
+      "url": "https://github.com/awth13/org-appear",
+      "category": "EMACS",
+      "description": "Toggle visibility of hidden Org mode element parts upon entering and leaving an element."
+    },
+    {
+      "repo": "ayghri/i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "category": "AI-CODE",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output."
+    },
+    {
+      "repo": "babycommando/entity-db",
+      "url": "https://github.com/babycommando/entity-db",
+      "category": "FRONTEND",
+      "description": "EntityDB is an in-browser vector database wrapping indexedDB and Transformers.js over WebAssembly."
+    },
+    {
+      "repo": "backnotprop/pstack",
+      "url": "https://github.com/backnotprop/pstack",
+      "category": "AI-CODE",
+      "description": "Use pstack with claude, codex, pi - Skills and principles for rigorous AI-assisted engineering."
+    },
+    {
+      "repo": "baidu/Unlimited-OCR",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "category": "AI-ENG",
+      "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing."
+    },
+    {
+      "repo": "BIT-ENGD/cs146s_cn",
+      "url": "https://github.com/BIT-ENGD/cs146s_cn",
+      "category": "AI-ENG",
+      "description": "Chinese materials for Stanford's CS146S modern software development course."
+    },
+    {
+      "repo": "blinkospace/blinko",
+      "url": "https://github.com/blinkospace/blinko",
+      "category": "NOTES",
+      "description": "An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript ."
+    },
+    {
+      "repo": "bluesky-social/social-app",
+      "url": "https://github.com/bluesky-social/social-app",
+      "category": "DESIGN",
+      "description": "The Bluesky Social application for Web, iOS, and Android."
+    },
+    {
+      "repo": "bmad-code-org/BMAD-METHOD",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+      "category": "AI-CODE",
+      "description": "A structured agent workflow for software planning and development."
+    },
+    {
+      "repo": "bojieli/ai-agent-book",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "category": "AI-ENG",
+      "description": "An open book with code examples on AI agent design and engineering."
+    },
+    {
+      "repo": "bojieli/ai-infra-book",
+      "url": "https://github.com/bojieli/ai-infra-book",
+      "category": "AI-ENG",
+      "description": "An open book on quantitative analysis and system design for LLM training and inference."
+    },
+    {
+      "repo": "browseros-ai/BrowserOS",
+      "url": "https://github.com/browseros-ai/BrowserOS",
+      "category": "AI-APPS",
+      "description": "The open-source Agentic browser; alternative to ChatGPT Atlas, Perplexity Comet, Dia."
+    },
+    {
+      "repo": "btahir/open-deep-research",
+      "url": "https://github.com/btahir/open-deep-research",
+      "category": "AI-APPS",
+      "description": "Open source alternative to Gemini Deep Research. Generate reports with AI based on search results."
+    },
+    {
+      "repo": "buchidonggua/dg-ai-notes",
+      "url": "https://github.com/buchidonggua/dg-ai-notes",
+      "category": "AI-ENG",
+      "description": "Agent engineering notes, Pi SDK walkthroughs, and practical examples."
+    },
+    {
+      "repo": "bumblepup/highlight-indent-guides",
+      "url": "https://github.com/bumblepup/highlight-indent-guides",
+      "category": "EMACS",
+      "description": "Emacs minor mode to highlight indentation."
+    },
+    {
+      "repo": "BurntSushi/ripgrep",
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "category": "CLI",
+      "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore."
+    },
+    {
+      "repo": "ButTaiwan/iansui",
+      "url": "https://github.com/ButTaiwan/iansui",
+      "category": "DESIGN",
+      "description": "A Traditional Chinese font for Taiwan, adapted from Klee One."
+    },
+    {
+      "repo": "ByteByteGoHq/system-design-101",
+      "url": "https://github.com/ByteByteGoHq/system-design-101",
+      "category": "LEARN",
+      "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews."
+    },
+    {
+      "repo": "bytecodealliance/wasmtime",
+      "url": "https://github.com/bytecodealliance/wasmtime",
+      "category": "INFRA",
+      "description": "A lightweight WebAssembly runtime that is fast, secure, and standards-compliant."
+    },
+    {
+      "repo": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "category": "AI-APPS",
+      "description": "An agent-based video production system with reusable tools and workflows."
+    },
+    {
+      "repo": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "category": "AI-CODE",
+      "description": "Agent skills for creating diagrams as self-contained HTML and SVG."
+    },
+    {
+      "repo": "charlax/professional-programming",
+      "url": "https://github.com/charlax/professional-programming",
+      "category": "LEARN",
+      "description": "A collection of learning resources for curious software engineers."
+    },
+    {
+      "repo": "charmbracelet/glow",
+      "url": "https://github.com/charmbracelet/glow",
+      "category": "NOTES",
+      "description": "Render markdown on the CLI, with pizzazz! \ud83d\udc85\ud83c\udffb."
+    },
+    {
+      "repo": "chenglou/pretext",
+      "url": "https://github.com/chenglou/pretext",
+      "category": "FRONTEND",
+      "description": "Fast, accurate & comprehensive text measurement & layout."
+    },
+    {
+      "repo": "CherryHQ/cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "category": "AI-APPS",
+      "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs."
+    },
+    {
+      "repo": "chipsenkbeil/org-roam.nvim",
+      "url": "https://github.com/chipsenkbeil/org-roam.nvim",
+      "category": "NVIM",
+      "description": "Port of org-roam to neovim using orgmode."
+    },
+    {
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "category": "AI-CODE",
+      "description": "Chrome DevTools for coding agents."
+    },
+    {
+      "repo": "citrolabs/ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "category": "AI-APPS",
+      "description": "A browser automation tool that lets AI agents use an existing browser session."
+    },
+    {
+      "repo": "code-yeongyu/oh-my-openagent",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "category": "AI-CODE",
+      "description": "A multi-agent workflow and orchestration toolkit for coding assistants."
+    },
+    {
+      "repo": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "category": "LEARN",
+      "description": "Master programming by recreating your favorite technologies from scratch."
+    },
+    {
+      "repo": "coffe1891/frontend-hard-mode-interview",
+      "url": "https://github.com/coffe1891/frontend-hard-mode-interview",
+      "category": "LEARN",
+      "description": "Frontend interview study materials covering JavaScript, design patterns, and software development."
+    },
+    {
+      "repo": "coleam00/context-engineering-intro",
+      "url": "https://github.com/coleam00/context-engineering-intro",
+      "category": "AI-CODE",
+      "description": "An introduction to context engineering for coding assistants."
+    },
+    {
+      "repo": "Companion-Inc/feynman",
+      "url": "https://github.com/Companion-Inc/feynman",
+      "category": "AI-APPS",
+      "description": "The open source AI research agent."
+    },
+    {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "category": "AI-CODE",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows."
+    },
+    {
+      "repo": "CopilotC-Nvim/CopilotChat.nvim",
+      "url": "https://github.com/CopilotC-Nvim/CopilotChat.nvim",
+      "category": "NVIM",
+      "description": "Chat with GitHub Copilot in Neovim."
+    },
+    {
+      "repo": "cuolm/pi-sbx-llamacpp",
+      "url": "https://github.com/cuolm/pi-sbx-llamacpp",
+      "category": "AI-CODE",
+      "description": "Run Pi coding agent isolated in a Docker Sandbox microVM with a local llama-server as the inference backend."
+    },
+    {
+      "repo": "d12frosted/homebrew-emacs-plus",
+      "url": "https://github.com/d12frosted/homebrew-emacs-plus",
+      "category": "EMACS",
+      "description": "Emacs Plus formulae for the Homebrew package manager."
+    },
+    {
+      "repo": "dakra/ghostel",
+      "url": "https://github.com/dakra/ghostel",
+      "category": "EMACS",
+      "description": "Terminal emulator powered by libghostty."
+    },
+    {
+      "repo": "dandavison/delta",
+      "url": "https://github.com/dandavison/delta",
+      "category": "DEV",
+      "description": "A syntax-highlighting pager for git, diff, grep, rg --json, and blame output."
+    },
+    {
+      "repo": "davila7/claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "category": "AI-CODE",
+      "description": "CLI tool for configuring and monitoring Claude Code."
+    },
+    {
+      "repo": "dbachelder/pi-btw",
+      "url": "https://github.com/dbachelder/pi-btw",
+      "category": "AI-CODE",
+      "description": "Side conversations and parallel sessions for the Pi coding agent."
+    },
+    {
+      "repo": "deepseek-ai/awesome-deepseek-integration",
+      "url": "https://github.com/deepseek-ai/awesome-deepseek-integration",
+      "category": "AI-ENG",
+      "description": "Integrate the DeepSeek API into popular software."
+    },
+    {
+      "repo": "dense-analysis/ale",
+      "url": "https://github.com/dense-analysis/ale",
+      "category": "NVIM",
+      "description": "Check syntax in Vim/Neovim asynchronously and fix files, with Language Server Protocol (LSP) support."
+    },
+    {
+      "repo": "dgkanatsios/CKAD-exercises",
+      "url": "https://github.com/dgkanatsios/CKAD-exercises",
+      "category": "LEARN",
+      "description": "A set of exercises to prepare for Certified Kubernetes Application Developer exam by Cloud Native Computing Foundation."
+    },
+    {
+      "repo": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "category": "AI-CODE",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
+    },
+    {
+      "repo": "DigitalPlatDev/FreeDomain",
+      "url": "https://github.com/DigitalPlatDev/FreeDomain",
+      "category": "INFRA",
+      "description": "Free domain registration and practical DNS learning resources for everyone."
+    },
+    {
+      "repo": "digoal/blog",
+      "url": "https://github.com/digoal/blog",
+      "category": "LEARN",
+      "description": "AI,Opensource,Database,Business,Finance,Minds. git clone --depth 1 https://github.com/digoal/blog."
+    },
+    {
+      "repo": "dmmulroy/ts-error-translator.nvim",
+      "url": "https://github.com/dmmulroy/ts-error-translator.nvim",
+      "category": "NVIM",
+      "description": "A Neovim plugin that turns TypeScript diagnostics into readable explanations."
+    },
+    {
+      "repo": "doggy8088/bilingual_book_maker",
+      "url": "https://github.com/doggy8088/bilingual_book_maker",
+      "category": "AI-APPS",
+      "description": "Make bilingual epub books Using AI translate."
+    },
+    {
+      "repo": "domtronn/all-the-icons.el",
+      "url": "https://github.com/domtronn/all-the-icons.el",
+      "category": "EMACS",
+      "description": "A utility package to collect various Icon Fonts and propertize them within Emacs."
+    },
+    {
+      "repo": "doodlewind/jshistory-cn",
+      "url": "https://github.com/doodlewind/jshistory-cn",
+      "category": "LEARN",
+      "description": "A Chinese translation of JavaScript: The First 20 Years."
+    },
+    {
+      "repo": "doomemacs/core",
+      "url": "https://github.com/doomemacs/core",
+      "category": "EMACS",
+      "description": "An Emacs framework for the stubborn martian hacker."
+    },
+    {
+      "repo": "doomemacs/themes",
+      "url": "https://github.com/doomemacs/themes",
+      "category": "EMACS",
+      "description": "A megapack of themes for GNU Emacs."
+    },
+    {
+      "repo": "dreamhunter2333/cloudflare_temp_email",
+      "url": "https://github.com/dreamhunter2333/cloudflare_temp_email",
+      "category": "INFRA",
+      "description": "A self-hosted temporary email service built on Cloudflare."
+    },
+    {
+      "repo": "drunkdream/weread-exporter",
+      "url": "https://github.com/drunkdream/weread-exporter",
+      "category": "NOTES",
+      "description": "Tools for exporting WeRead books to common ebook formats."
+    },
+    {
+      "repo": "dylanaraps/fff",
+      "url": "https://github.com/dylanaraps/fff",
+      "category": "CLI",
+      "description": "A simple file manager written in bash."
+    },
+    {
+      "repo": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "category": "AI-CODE",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI."
+    },
+    {
+      "repo": "EdenEast/nightfox.nvim",
+      "url": "https://github.com/EdenEast/nightfox.nvim",
+      "category": "NVIM",
+      "description": "A highly customizable theme for vim and neovim with support for lsp, treesitter and a variety of plugins."
+    },
+    {
+      "repo": "ekickx/clipboard-image.nvim",
+      "url": "https://github.com/ekickx/clipboard-image.nvim",
+      "category": "NVIM",
+      "description": "Neovim Lua plugin to paste image from clipboard."
+    },
+    {
+      "repo": "emacs-evil/evil",
+      "url": "https://github.com/emacs-evil/evil",
+      "category": "EMACS",
+      "description": "The extensible vi layer for Emacs."
+    },
+    {
+      "repo": "emacs-evil/evil-collection",
+      "url": "https://github.com/emacs-evil/evil-collection",
+      "category": "EMACS",
+      "description": "A set of keybindings for evil-mode."
+    },
+    {
+      "repo": "emacs-evil/evil-surround",
+      "url": "https://github.com/emacs-evil/evil-surround",
+      "category": "EMACS",
+      "description": "you will be surrounded (surround.vim for evil, the extensible vi layer)."
+    },
+    {
+      "repo": "emacs-lsp/lsp-mode",
+      "url": "https://github.com/emacs-lsp/lsp-mode",
+      "category": "EMACS",
+      "description": "Emacs client/library for the Language Server Protocol."
+    },
+    {
+      "repo": "emacs-lsp/lsp-ui",
+      "url": "https://github.com/emacs-lsp/lsp-ui",
+      "category": "EMACS",
+      "description": "UI integrations for lsp-mode."
+    },
+    {
+      "repo": "emacs-tw/awesome-emacs",
+      "url": "https://github.com/emacs-tw/awesome-emacs",
+      "category": "EMACS",
+      "description": "A community driven list of useful Emacs packages, libraries and other items."
+    },
+    {
+      "repo": "esmadrider/deno-tutorial",
+      "url": "https://github.com/esmadrider/deno-tutorial",
+      "category": "LEARN",
+      "description": "Chinese tutorials on Deno, Node.js, and web application development."
+    },
+    {
+      "repo": "esmuellert/codediff.nvim",
+      "url": "https://github.com/esmuellert/codediff.nvim",
+      "category": "NVIM",
+      "description": "Live code review for Neovim with VSCode style diffs."
+    },
+    {
+      "repo": "estin/simple-completion-language-server",
+      "url": "https://github.com/estin/simple-completion-language-server",
+      "category": "EDITORS",
+      "description": "Language server to enable word completion and snippets for Helix editor."
+    },
+    {
+      "repo": "eugene1g/agent-safehouse",
+      "url": "https://github.com/eugene1g/agent-safehouse",
+      "category": "AI-CODE",
+      "description": "Sandbox your local AI agents so they can read/write only what they need."
+    },
+    {
+      "repo": "exa-labs/exa-mcp-server",
+      "url": "https://github.com/exa-labs/exa-mcp-server",
+      "category": "AI-ENG",
+      "description": "Exa MCP for web search and web crawling!"
+    },
+    {
+      "repo": "Exafunction/windsurf.vim",
+      "url": "https://github.com/Exafunction/windsurf.vim",
+      "category": "NVIM",
+      "description": "Free, ultrafast Copilot alternative for Vim and Neovim."
+    },
+    {
+      "repo": "excalidraw/excalidraw",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "category": "DESIGN",
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams."
+    },
+    {
+      "repo": "f2etw/jobs",
+      "url": "https://github.com/f2etw/jobs",
+      "category": "LEARN",
+      "description": "A job board maintained by Taiwan's frontend community."
+    },
+    {
+      "repo": "facebook/docusaurus",
+      "url": "https://github.com/facebook/docusaurus",
+      "category": "NOTES",
+      "description": "Easy to maintain open source documentation websites."
+    },
+    {
+      "repo": "fallow-rs/fallow",
+      "url": "https://github.com/fallow-rs/fallow",
+      "category": "DEV",
+      "description": "Codebase analysis for JavaScript and TypeScript, including unused code, duplication, and complexity."
+    },
+    {
+      "repo": "Fanael/rainbow-delimiters",
+      "url": "https://github.com/Fanael/rainbow-delimiters",
+      "category": "EMACS",
+      "description": "Emacs rainbow delimiters mode."
+    },
+    {
+      "repo": "fang2hou/blink-copilot",
+      "url": "https://github.com/fang2hou/blink-copilot",
+      "category": "NVIM",
+      "description": "Configurable GitHub Copilot blink.cmp source for Neovim."
+    },
+    {
+      "repo": "Feel-ix-343/markdown-oxide",
+      "url": "https://github.com/Feel-ix-343/markdown-oxide",
+      "category": "EDITORS",
+      "description": "PKM Markdown Language Server."
+    },
+    {
+      "repo": "FelixKratz/JankyBorders",
+      "url": "https://github.com/FelixKratz/JankyBorders",
+      "category": "DESKTOP",
+      "description": "A lightweight window border system for macOS."
+    },
+    {
+      "repo": "FelixKratz/SketchyBar",
+      "url": "https://github.com/FelixKratz/SketchyBar",
+      "category": "DESKTOP",
+      "description": "A highly customizable macOS status bar replacement."
+    },
+    {
+      "repo": "fharper/awesome-supernote",
+      "url": "https://github.com/fharper/awesome-supernote",
+      "category": "NOTES",
+      "description": "A curated list of projects, templates or anything interesting related to the Supernote tablet."
+    },
+    {
+      "repo": "FinMind/FinMind",
+      "url": "https://github.com/FinMind/FinMind",
+      "category": "DEV",
+      "description": "Financial data APIs and a Python SDK, with a focus on Taiwan's markets."
+    },
+    {
+      "repo": "fishjar/kiss-translator",
+      "url": "https://github.com/fishjar/kiss-translator",
+      "category": "AI-APPS",
+      "description": "A bilingual translation browser extension and userscript."
+    },
+    {
+      "repo": "FL33TW00D/whisper-turbo",
+      "url": "https://github.com/FL33TW00D/whisper-turbo",
+      "category": "AI-ENG",
+      "description": "Cross-Platform, GPU Accelerated Whisper \ud83c\udfce\ufe0f."
+    },
+    {
+      "repo": "flowershow/flowershow",
+      "url": "https://github.com/flowershow/flowershow",
+      "category": "NOTES",
+      "description": "Publish markdown (and html) websites, docs, wikis and websites in seconds. Integrates with your AI."
+    },
+    {
+      "repo": "flycheck/flycheck",
+      "url": "https://github.com/flycheck/flycheck",
+      "category": "EMACS",
+      "description": "On the fly syntax checking for GNU Emacs."
+    },
+    {
+      "repo": "folke/flash.nvim",
+      "url": "https://github.com/folke/flash.nvim",
+      "category": "NVIM",
+      "description": "Navigate your code with search labels, enhanced character motions and Treesitter integration."
+    },
+    {
+      "repo": "folke/noice.nvim",
+      "url": "https://github.com/folke/noice.nvim",
+      "category": "NVIM",
+      "description": "Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu."
+    },
+    {
+      "repo": "folke/snacks.nvim",
+      "url": "https://github.com/folke/snacks.nvim",
+      "category": "NVIM",
+      "description": "A collection of QoL plugins for Neovim."
+    },
+    {
+      "repo": "folke/trouble.nvim",
+      "url": "https://github.com/folke/trouble.nvim",
+      "category": "NVIM",
+      "description": "A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing."
+    },
+    {
+      "repo": "FrameworkComputer/linux-docs",
+      "url": "https://github.com/FrameworkComputer/linux-docs",
+      "category": "DESKTOP",
+      "description": "Linux setup and usage guides for Framework computers."
+    },
+    {
+      "repo": "garrytan/gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "category": "AI-CODE",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA."
+    },
+    {
+      "repo": "Gentleman-Programming/gentle-ai",
+      "url": "https://github.com/Gentleman-Programming/gentle-ai",
+      "category": "AI-CODE",
+      "description": "Configuration tooling for coding agents, skills, memory, and MCP integrations."
+    },
+    {
+      "repo": "gfx-rs/wgpu",
+      "url": "https://github.com/gfx-rs/wgpu",
+      "category": "FRONTEND",
+      "description": "A cross-platform, safe, pure-Rust graphics API."
+    },
+    {
+      "repo": "ggandor/leap.nvim",
+      "url": "https://github.com/ggandor/leap.nvim",
+      "category": "NVIM",
+      "description": "Fast cursor navigation using character searches and target labels in Neovim."
+    },
+    {
+      "repo": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "category": "AI-ENG",
+      "description": "LLM inference in C/C++."
+    },
+    {
+      "repo": "ghostty-org/ghostty",
+      "url": "https://github.com/ghostty-org/ghostty",
+      "category": "CLI",
+      "description": "Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration."
+    },
+    {
+      "repo": "gitui-org/gitui",
+      "url": "https://github.com/gitui-org/gitui",
+      "category": "DEV",
+      "description": "Blazing \ud83d\udca5 fast terminal-ui for git written in rust \ud83e\udd80."
+    },
+    {
+      "repo": "gj1118/helix",
+      "url": "https://github.com/gj1118/helix",
+      "category": "EDITORS",
+      "description": "A post-modern modal text editor."
+    },
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "category": "AI-CODE",
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor."
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "category": "AI-CODE",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal."
+    },
+    {
+      "repo": "google-research/harness2",
+      "url": "https://github.com/google-research/harness2",
+      "category": "AI-ENG",
+      "description": "A research framework for improving agent prompts, tools, memory, and orchestration."
+    },
+    {
+      "repo": "googlefonts/compute-shader-101",
+      "url": "https://github.com/googlefonts/compute-shader-101",
+      "category": "LEARN",
+      "description": "Sample code for compute shader 101 training."
+    },
+    {
+      "repo": "googlefonts/googlesans-code",
+      "url": "https://github.com/googlefonts/googlesans-code",
+      "category": "DESIGN",
+      "description": "The Google Sans Code font family."
+    },
+    {
+      "repo": "gpakosz/.tmux",
+      "url": "https://github.com/gpakosz/.tmux",
+      "category": "CLI",
+      "description": "Oh my tmux! My self-contained, pretty & versatile tmux configuration made with \ud83d\udc9b\ud83e\ude77\ud83d\udc99\ud83d\udda4\u2764\ufe0f\ud83e\udd0d."
+    },
+    {
+      "repo": "greatfrontend/awesome-front-end-system-design",
+      "url": "https://github.com/greatfrontend/awesome-front-end-system-design",
+      "category": "LEARN",
+      "description": "Curated front end system design resources for interviews and learning."
+    },
+    {
+      "repo": "gsd-build/get-shit-done",
+      "url": "https://github.com/gsd-build/get-shit-done",
+      "category": "AI-CODE",
+      "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by T\u00c2CHES."
+    },
+    {
+      "repo": "gvergnaud/hotscript",
+      "url": "https://github.com/gvergnaud/hotscript",
+      "category": "FRONTEND",
+      "description": "A library of composable functions for the type-level! Transform your TypeScript types in any way you want using functions you already know."
+    },
+    {
+      "repo": "gvergnaud/ts-pattern",
+      "url": "https://github.com/gvergnaud/ts-pattern",
+      "category": "FRONTEND",
+      "description": "The exhaustive Pattern Matching library for TypeScript, with smart type inference."
+    },
+    {
+      "repo": "haizlin/fe-interview",
+      "url": "https://github.com/haizlin/fe-interview",
+      "category": "LEARN",
+      "description": "Frontend interview questions for regular practice and study."
+    },
+    {
+      "repo": "hakimel/reveal.js",
+      "url": "https://github.com/hakimel/reveal.js",
+      "category": "FRONTEND",
+      "description": "The HTML Presentation Framework."
+    },
+    {
+      "repo": "hakonharnes/img-clip.nvim",
+      "url": "https://github.com/hakonharnes/img-clip.nvim",
+      "category": "NVIM",
+      "description": "Embed images into any markup language, like LaTeX, Markdown or Typst."
+    },
+    {
+      "repo": "hejialianghe/Senior-FrontEnd",
+      "url": "https://github.com/hejialianghe/Senior-FrontEnd",
+      "category": "LEARN",
+      "description": "Study materials on advanced frontend and full-stack development."
+    },
+    {
+      "repo": "helix-editor/helix",
+      "url": "https://github.com/helix-editor/helix",
+      "category": "EDITORS",
+      "description": "A post-modern modal text editor."
+    },
+    {
+      "repo": "hemanth/functional-programming-jargon",
+      "url": "https://github.com/hemanth/functional-programming-jargon",
+      "category": "LEARN",
+      "description": "Jargon from the functional programming world in simple terms!"
+    },
+    {
+      "repo": "herdrdev/herdr",
+      "url": "https://github.com/herdrdev/herdr",
+      "category": "AI-CODE",
+      "description": "the runtime your coding agents live on."
+    },
+    {
+      "repo": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "category": "DESIGN",
+      "description": "Write HTML. Render video. Built for agents."
+    },
+    {
+      "repo": "hkneptune/FreeFileSync",
+      "url": "https://github.com/hkneptune/FreeFileSync",
+      "category": "DESKTOP",
+      "description": "A mirror of the FreeFileSync file synchronization tool's source code."
+    },
+    {
+      "repo": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "category": "AI-ENG",
+      "description": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps."
+    },
+    {
+      "repo": "hrsh7th/nvim-cmp",
+      "url": "https://github.com/hrsh7th/nvim-cmp",
+      "category": "NVIM",
+      "description": "A completion plugin for neovim coded in Lua."
+    },
+    {
+      "repo": "hrsh7th/vscode-langservers-extracted",
+      "url": "https://github.com/hrsh7th/vscode-langservers-extracted",
+      "category": "EDITORS",
+      "description": "vscode-langservers bin collection."
+    },
+    {
+      "repo": "HyDE-Project/HyDE",
+      "url": "https://github.com/HyDE-Project/HyDE",
+      "category": "DESKTOP",
+      "description": "Hyprland desktop configurations and themes for Arch-based Linux systems."
+    },
+    {
+      "repo": "hyprland-community/awesome-hyprland",
+      "url": "https://github.com/hyprland-community/awesome-hyprland",
+      "category": "DESKTOP",
+      "description": "Awesome list for Hyprland [maintainer=@yavko]."
+    },
+    {
+      "repo": "iamcco/markdown-preview.nvim",
+      "url": "https://github.com/iamcco/markdown-preview.nvim",
+      "category": "NVIM",
+      "description": "markdown preview plugin for (neo)vim."
+    },
+    {
+      "repo": "iamgio/quarkdown",
+      "url": "https://github.com/iamgio/quarkdown",
+      "category": "NOTES",
+      "description": "Markdown with superpowers: from ideas to papers, presentations, websites, books, and knowledge bases."
+    },
+    {
+      "repo": "ianand/spreadsheets-are-all-you-need",
+      "url": "https://github.com/ianand/spreadsheets-are-all-you-need",
+      "category": "AI-ENG",
+      "description": "An educational implementation of GPT-2 inference using spreadsheet formulas."
+    },
+    {
+      "repo": "ibhagwan/fzf-lua",
+      "url": "https://github.com/ibhagwan/fzf-lua",
+      "category": "NVIM",
+      "description": "Improved fzf.vim written in lua."
+    },
+    {
+      "repo": "iwe-org/iwe",
+      "url": "https://github.com/iwe-org/iwe",
+      "category": "NOTES",
+      "description": "Markdown knowledge graph \u2014 LSP for your editor, CLI + MCP memory for your AI agents."
+    },
+    {
+      "repo": "jackyzha0/quartz",
+      "url": "https://github.com/jackyzha0/quartz",
+      "category": "NOTES",
+      "description": "a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites."
+    },
+    {
+      "repo": "jakewvincent/mkdnflow.nvim",
+      "url": "https://github.com/jakewvincent/mkdnflow.nvim",
+      "category": "NVIM",
+      "description": "Fluent navigation and management of markdown notebooks."
+    },
+    {
+      "repo": "james-stoup/emacs-org-mode-tutorial",
+      "url": "https://github.com/james-stoup/emacs-org-mode-tutorial",
+      "category": "EMACS",
+      "description": "A primer for users trying to make sense of Org Mode."
+    },
+    {
+      "repo": "james-stoup/org-mode-advanced-tutorial",
+      "url": "https://github.com/james-stoup/org-mode-advanced-tutorial",
+      "category": "EMACS",
+      "description": "A tutorial for advanced Org Mode features."
+    },
+    {
+      "repo": "jarun/nnn",
+      "url": "https://github.com/jarun/nnn",
+      "category": "CLI",
+      "description": "n\u00b3 The unorthodox terminal file manager."
+    },
+    {
+      "repo": "jay-babu/mason-nvim-dap.nvim",
+      "url": "https://github.com/jay-babu/mason-nvim-dap.nvim",
+      "category": "NVIM",
+      "description": "Integration between mason.nvim and nvim-dap for debugger installation and configuration."
+    },
+    {
+      "repo": "jbiaojerry/ebook-treasure-chest",
+      "url": "https://github.com/jbiaojerry/ebook-treasure-chest",
+      "category": "NOTES",
+      "description": "A directory of ebook links across multiple subjects."
+    },
+    {
+      "repo": "jeffreytse/zsh-vi-mode",
+      "url": "https://github.com/jeffreytse/zsh-vi-mode",
+      "category": "CLI",
+      "description": "A better and friendly vi(vim) mode plugin for ZSH."
+    },
+    {
+      "repo": "jellydn/zed-101-setup",
+      "url": "https://github.com/jellydn/zed-101-setup",
+      "category": "EDITORS",
+      "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience."
+    },
+    {
+      "repo": "jesseduffield/lazydocker",
+      "url": "https://github.com/jesseduffield/lazydocker",
+      "category": "INFRA",
+      "description": "The lazier way to manage everything docker."
+    },
+    {
+      "repo": "jesseduffield/lazygit",
+      "url": "https://github.com/jesseduffield/lazygit",
+      "category": "DEV",
+      "description": "simple terminal UI for git commands."
+    },
+    {
+      "repo": "jesselau76/ebook-GPT-translator",
+      "url": "https://github.com/jesselau76/ebook-GPT-translator",
+      "category": "AI-APPS",
+      "description": "A tool for translating ebooks with GPT models."
+    },
+    {
+      "repo": "JimmyLv/awesome-nano-banana",
+      "url": "https://github.com/JimmyLv/awesome-nano-banana",
+      "category": "DESIGN",
+      "description": "A collection of image generation examples and prompts for Gemini image models."
+    },
+    {
+      "repo": "jmbuhr/otter.nvim",
+      "url": "https://github.com/jmbuhr/otter.nvim",
+      "category": "NVIM",
+      "description": "Language server support for code embedded in Markdown and Quarto documents."
+    },
+    {
+      "repo": "jordanbaird/Ice",
+      "url": "https://github.com/jordanbaird/Ice",
+      "category": "DESKTOP",
+      "description": "Powerful menu bar manager for macOS."
+    },
+    {
+      "repo": "joshuakatt/Bob-The-Builder",
+      "url": "https://github.com/joshuakatt/Bob-The-Builder",
+      "category": "AI-CODE",
+      "description": "Autonomous task orchestrator for Kiro + Claude specs."
+    },
+    {
+      "repo": "jtbm37/all-the-icons-dired",
+      "url": "https://github.com/jtbm37/all-the-icons-dired",
+      "category": "EMACS",
+      "description": "Adds dired support to all-the-icons."
+    },
+    {
+      "repo": "JuliusBrussee/caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "category": "AI-CODE",
+      "description": "why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman."
+    },
+    {
+      "repo": "junegunn/fzf",
+      "url": "https://github.com/junegunn/fzf",
+      "category": "CLI",
+      "description": "A command-line fuzzy finder."
+    },
+    {
+      "repo": "jwasham/coding-interview-university",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "category": "LEARN",
+      "description": "A complete computer science study plan to become a software engineer."
+    },
+    {
+      "repo": "jya-dev/supernote-tool",
+      "url": "https://github.com/jya-dev/supernote-tool",
+      "category": "NOTES",
+      "description": "Unofficial python tool for Supernote."
+    },
+    {
+      "repo": "kakoune-lsp/kakoune-lsp",
+      "url": "https://github.com/kakoune-lsp/kakoune-lsp",
+      "category": "EDITORS",
+      "description": "Kakoune Language Server Protocol Client."
+    },
+    {
+      "repo": "kelseyhightower/kubernetes-the-hard-way",
+      "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
+      "category": "LEARN",
+      "description": "Bootstrap Kubernetes the hard way. No scripts."
+    },
+    {
+      "repo": "kepano/obsidian-minimal",
+      "url": "https://github.com/kepano/obsidian-minimal",
+      "category": "NOTES",
+      "description": "A distraction-free and highly customizable theme for Obsidian."
+    },
+    {
+      "repo": "kevinhwang91/nvim-ufo",
+      "url": "https://github.com/kevinhwang91/nvim-ufo",
+      "category": "NVIM",
+      "description": "Not UFO in the sky, but an ultra fold in Neovim."
+    },
+    {
+      "repo": "krahets/hello-algo",
+      "url": "https://github.com/krahets/hello-algo",
+      "category": "LEARN",
+      "description": "Illustrated, runnable tutorials on data structures and algorithms."
+    },
+    {
+      "repo": "krahets/LeetCode-Book",
+      "url": "https://github.com/krahets/LeetCode-Book",
+      "category": "LEARN",
+      "description": "Data structures, algorithms, and programming interview solutions."
+    },
+    {
+      "repo": "LadybirdBrowser/ladybird",
+      "url": "https://github.com/LadybirdBrowser/ladybird",
+      "category": "DESKTOP",
+      "description": "Truly independent web browser."
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "category": "AI-ENG",
+      "description": "The agent engineering platform."
+    },
+    {
+      "repo": "langchain-ai/openwiki",
+      "url": "https://github.com/langchain-ai/openwiki",
+      "category": "AI-CODE",
+      "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase."
+    },
+    {
+      "repo": "larashero3-dotcom/lieflat-less-ai-tone",
+      "url": "https://github.com/larashero3-dotcom/lieflat-less-ai-tone",
+      "category": "AI-CODE",
+      "description": "A writing skill for reducing formulaic AI phrasing, based on Chinese corpus analysis."
+    },
+    {
+      "repo": "LazyVim/LazyVim",
+      "url": "https://github.com/LazyVim/LazyVim",
+      "category": "NVIM",
+      "description": "A modular Neovim configuration built around lazy.nvim."
+    },
+    {
+      "repo": "leath-dub/snipe.nvim",
+      "url": "https://github.com/leath-dub/snipe.nvim",
+      "category": "NVIM",
+      "description": "Efficient targetted menu built for fast buffer navigation."
+    },
+    {
+      "repo": "leona/helix-gpt",
+      "url": "https://github.com/leona/helix-gpt",
+      "category": "EDITORS",
+      "description": "Code assistant language server for Helix with support for Copilot/OpenAI/Codeium/Ollama."
+    },
+    {
+      "repo": "Leseratte10/acsm-calibre-plugin",
+      "url": "https://github.com/Leseratte10/acsm-calibre-plugin",
+      "category": "NOTES",
+      "description": "Calibre plugin for ACSM->EPUB and ACSM->PDF conversion."
+    },
+    {
+      "repo": "linexjlin/GPTs",
+      "url": "https://github.com/linexjlin/GPTs",
+      "category": "AI-ENG",
+      "description": "leaked prompts of GPTs."
+    },
+    {
+      "repo": "liquidslr/system-design-notes",
+      "url": "https://github.com/liquidslr/system-design-notes",
+      "category": "LEARN",
+      "description": "Notes of the book System Desgin Interview - An Insider's Guide."
+    },
+    {
+      "repo": "llemaitre19/jtsx",
+      "url": "https://github.com/llemaitre19/jtsx",
+      "category": "EMACS",
+      "description": "Extends Emacs JSX/TSX built-in support."
+    },
+    {
+      "repo": "longbridge/gpui-kit",
+      "url": "https://github.com/longbridge/gpui-kit",
+      "category": "FRONTEND",
+      "description": "Rust GUI components for building fantastic cross-platform desktop application by using GPUI."
+    },
+    {
+      "repo": "lumen-oss/nvim-best-practices",
+      "url": "https://github.com/lumen-oss/nvim-best-practices",
+      "category": "NVIM",
+      "description": "Collection of DOs and DON'Ts for modern Neovim Lua plugin development."
+    },
+    {
+      "repo": "LunarVim/LunarVim",
+      "url": "https://github.com/LunarVim/LunarVim",
+      "category": "NVIM",
+      "description": "LunarVim is an IDE layer for Neovim. Completely free and community driven."
+    },
+    {
+      "repo": "LunarVim/Neovim-from-scratch",
+      "url": "https://github.com/LunarVim/Neovim-from-scratch",
+      "category": "NVIM",
+      "description": "A Neovim config designed from scratch to be understandable."
+    },
+    {
+      "repo": "maaslalani/slides",
+      "url": "https://github.com/maaslalani/slides",
+      "category": "CLI",
+      "description": "Terminal based presentation tool."
+    },
+    {
+      "repo": "MaggieAppleton/digital-gardeners",
+      "url": "https://github.com/MaggieAppleton/digital-gardeners",
+      "category": "NOTES",
+      "description": "Resources, links, projects, and ideas for gardeners tending their digital notes on the public interwebs."
+    },
+    {
+      "repo": "magnars/expand-region.el",
+      "url": "https://github.com/magnars/expand-region.el",
+      "category": "EMACS",
+      "description": "Emacs extension to increase selected region by semantic units."
+    },
+    {
+      "repo": "mahonzhan/awesome-coding-plan",
+      "url": "https://github.com/mahonzhan/awesome-coding-plan",
+      "category": "AI-CODE",
+      "description": "Comparisons of coding assistant subscription plans."
+    },
+    {
+      "repo": "manaflow-ai/cmux",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "category": "CLI",
+      "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability."
+    },
+    {
+      "repo": "manateelazycat/lsp-bridge",
+      "url": "https://github.com/manateelazycat/lsp-bridge",
+      "category": "EMACS",
+      "description": "A blazingly fast LSP client for Emacs."
+    },
+    {
+      "repo": "mason-org/mason-lspconfig.nvim",
+      "url": "https://github.com/mason-org/mason-lspconfig.nvim",
+      "category": "NVIM",
+      "description": "Extension to mason.nvim that makes it easier to use lspconfig with mason.nvim."
+    },
+    {
+      "repo": "mason-org/mason.nvim",
+      "url": "https://github.com/mason-org/mason.nvim",
+      "category": "NVIM",
+      "description": "Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters."
+    },
+    {
+      "repo": "mattn/efm-langserver",
+      "url": "https://github.com/mattn/efm-langserver",
+      "category": "EDITORS",
+      "description": "General purpose Language Server."
+    },
+    {
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "category": "AI-CODE",
+      "description": "Skills for Real Engineers. Straight from my .agents directory."
+    },
+    {
+      "repo": "mawww/kakoune",
+      "url": "https://github.com/mawww/kakoune",
+      "category": "EDITORS",
+      "description": "mawww's experiment for a better code editor."
+    },
+    {
+      "repo": "MeanderingProgrammer/render-markdown.nvim",
+      "url": "https://github.com/MeanderingProgrammer/render-markdown.nvim",
+      "category": "NVIM",
+      "description": "Improve viewing Markdown in Neovim."
+    },
+    {
+      "repo": "mengxi-ream/read-frog",
+      "url": "https://github.com/mengxi-ream/read-frog",
+      "category": "AI-APPS",
+      "description": "AI-assisted bilingual reading, language learning, and flashcards."
+    },
+    {
+      "repo": "meow-edit/meow",
+      "url": "https://github.com/meow-edit/meow",
+      "category": "EMACS",
+      "description": "Modal editing for Emacs."
+    },
+    {
+      "repo": "mfontanini/presenterm",
+      "url": "https://github.com/mfontanini/presenterm",
+      "category": "CLI",
+      "description": "A markdown terminal slideshow tool."
+    },
+    {
+      "repo": "mfussenegger/nvim-dap",
+      "url": "https://github.com/mfussenegger/nvim-dap",
+      "category": "NVIM",
+      "description": "Debug Adapter Protocol client implementation for Neovim."
+    },
+    {
+      "repo": "mfussenegger/nvim-lint",
+      "url": "https://github.com/mfussenegger/nvim-lint",
+      "category": "NVIM",
+      "description": "Mirror of: https://codeberg.org/mfussenegger/nvim-lint An asynchronous linter plugin for Neovim complementary to the built-in Language Server Protocol support."
+    },
+    {
+      "repo": "microsoft/playwright-cli",
+      "url": "https://github.com/microsoft/playwright-cli",
+      "category": "DEV",
+      "description": "CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots."
+    },
+    {
+      "repo": "microsoft/typescript-go",
+      "url": "https://github.com/microsoft/typescript-go",
+      "category": "FRONTEND",
+      "description": "Staging repo for development of native port of TypeScript."
+    },
+    {
+      "repo": "mifi/lossless-cut",
+      "url": "https://github.com/mifi/lossless-cut",
+      "category": "DESIGN",
+      "description": "The swiss army knife of lossless video/audio editing."
+    },
+    {
+      "repo": "mikavilpas/yazi.nvim",
+      "url": "https://github.com/mikavilpas/yazi.nvim",
+      "category": "NVIM",
+      "description": "A Neovim Plugin for the yazi terminal file manager."
+    },
+    {
+      "repo": "mikbry/awesome-webgpu",
+      "url": "https://github.com/mikbry/awesome-webgpu",
+      "category": "LEARN",
+      "description": "Curated list of awesome things around WebGPU ecosystem."
+    },
+    {
+      "repo": "millionco/react-doctor",
+      "url": "https://github.com/millionco/react-doctor",
+      "category": "DEV",
+      "description": "Your agent writes bad React. This catches it."
+    },
+    {
+      "repo": "minad/consult",
+      "url": "https://github.com/minad/consult",
+      "category": "EMACS",
+      "description": "consult.el - Search and navigate via completing-read."
+    },
+    {
+      "repo": "minad/corfu",
+      "url": "https://github.com/minad/corfu",
+      "category": "EMACS",
+      "description": "corfu.el - COmpletion in Region FUnction."
+    },
+    {
+      "repo": "minad/marginalia",
+      "url": "https://github.com/minad/marginalia",
+      "category": "EMACS",
+      "description": "marginalia.el - Marginalia in the minibuffer."
+    },
+    {
+      "repo": "minad/org-modern",
+      "url": "https://github.com/minad/org-modern",
+      "category": "EMACS",
+      "description": "Visual styling improvements for Emacs Org documents."
+    },
+    {
+      "repo": "minad/vertico",
+      "url": "https://github.com/minad/vertico",
+      "category": "EMACS",
+      "description": "vertico.el - VERTical Interactive COmpletion."
+    },
+    {
+      "repo": "minbrowser/min",
+      "url": "https://github.com/minbrowser/min",
+      "category": "DESKTOP",
+      "description": "A fast, minimal browser that protects your privacy."
+    },
+    {
+      "repo": "misohena/el-easydraw",
+      "url": "https://github.com/misohena/el-easydraw",
+      "category": "EMACS",
+      "description": "Embedded drawing tool for Emacs."
+    },
+    {
+      "repo": "MisterBooo/LeetCodeAnimation",
+      "url": "https://github.com/MisterBooo/LeetCodeAnimation",
+      "category": "LEARN",
+      "description": "Animated explanations of LeetCode problem-solving techniques."
+    },
+    {
+      "repo": "mixn/carbon-now-cli",
+      "url": "https://github.com/mixn/carbon-now-cli",
+      "category": "DESIGN",
+      "description": "Beautiful images of your code \u2014 from right inside your terminal."
+    },
+    {
+      "repo": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "category": "AI-CODE",
+      "description": "Context management and tool-output processing for AI coding agents."
+    },
+    {
+      "repo": "mlabonne/llm-course",
+      "url": "https://github.com/mlabonne/llm-course",
+      "category": "AI-ENG",
+      "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks."
+    },
+    {
+      "repo": "mlc-ai/web-llm",
+      "url": "https://github.com/mlc-ai/web-llm",
+      "category": "AI-ENG",
+      "description": "High-performance In-browser LLM Inference Engine."
+    },
+    {
+      "repo": "modelcontextprotocol/ext-apps",
+      "url": "https://github.com/modelcontextprotocol/ext-apps",
+      "category": "AI-ENG",
+      "description": "Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers."
+    },
+    {
+      "repo": "modem-dev/hunk",
+      "url": "https://github.com/modem-dev/hunk",
+      "category": "DEV",
+      "description": "Review-first terminal diff viewer for agentic coders."
+    },
+    {
+      "repo": "module-federation/core",
+      "url": "https://github.com/module-federation/core",
+      "category": "FRONTEND",
+      "description": "Module Federation is a concept that allows developers to share code and resources across multiple JavaScript applications."
+    },
+    {
+      "repo": "module-federation/module-federation-examples",
+      "url": "https://github.com/module-federation/module-federation-examples",
+      "category": "FRONTEND",
+      "description": "Implementation examples of module federation , by the creators of module federation."
+    },
+    {
+      "repo": "Molunerfinn/PicGo",
+      "url": "https://github.com/Molunerfinn/PicGo",
+      "category": "NOTES",
+      "description": "The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done."
+    },
+    {
+      "repo": "moment/luxon",
+      "url": "https://github.com/moment/luxon",
+      "category": "FRONTEND",
+      "description": "A library for working with dates and times in JS."
+    },
+    {
+      "repo": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "category": "AI-CODE",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries."
+    },
+    {
+      "repo": "mqyqingfeng/Blog",
+      "url": "https://github.com/mqyqingfeng/Blog",
+      "category": "LEARN",
+      "description": "Articles on JavaScript, ES6, and React."
+    },
+    {
+      "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "category": "AI-CODE",
+      "description": "Agent skills for context engineering and multi-agent systems."
+    },
+    {
+      "repo": "NandhaKishorM/laya",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "category": "AI-ENG",
+      "description": "A multilingual decision engine for typed choices, scoring, and yes-or-no decisions."
+    },
+    {
+      "repo": "neovide/neovide",
+      "url": "https://github.com/neovide/neovide",
+      "category": "NVIM",
+      "description": "No Nonsense Neovim Client in Rust."
+    },
+    {
+      "repo": "neovim/neovim",
+      "url": "https://github.com/neovim/neovim",
+      "category": "NVIM",
+      "description": "Vim-fork focused on extensibility and usability."
+    },
+    {
+      "repo": "neovim/nvim-lspconfig",
+      "url": "https://github.com/neovim/nvim-lspconfig",
+      "category": "NVIM",
+      "description": "Quickstart configs for Nvim LSP."
+    },
+    {
+      "repo": "neurocyte/flow",
+      "url": "https://github.com/neurocyte/flow",
+      "category": "EDITORS",
+      "description": "Flow Control: a programmer's text editor."
+    },
+    {
+      "repo": "nex3/perspective-el",
+      "url": "https://github.com/nex3/perspective-el",
+      "category": "EMACS",
+      "description": "Named Emacs workspaces with separate buffers and window layouts."
+    },
+    {
+      "repo": "nickscamara/open-deep-research",
+      "url": "https://github.com/nickscamara/open-deep-research",
+      "category": "AI-APPS",
+      "description": "An open source deep research clone. AI Agent that reasons large amounts of web data extracted with Firecrawl."
+    },
+    {
+      "repo": "nicobailon/pi-subagents",
+      "url": "https://github.com/nicobailon/pi-subagents",
+      "category": "AI-CODE",
+      "description": "Pi extension for async subagent delegation with truncation, artifacts, and session sharing."
+    },
+    {
+      "repo": "nicobailon/pi-web-access",
+      "url": "https://github.com/nicobailon/pi-web-access",
+      "category": "AI-CODE",
+      "description": "Web search and content extraction extension for Pi coding agent."
+    },
+    {
+      "repo": "nicobailon/visual-explainer",
+      "url": "https://github.com/nicobailon/visual-explainer",
+      "category": "AI-CODE",
+      "description": "Agent skill that generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables, and project recaps."
+    },
+    {
+      "repo": "Nicolepcx/ai-agents-the-definitive-guide",
+      "url": "https://github.com/Nicolepcx/ai-agents-the-definitive-guide",
+      "category": "AI-ENG",
+      "description": "Repo for AI Agents The Definitive Guide."
+    },
+    {
+      "repo": "nikitabobko/AeroSpace",
+      "url": "https://github.com/nikitabobko/AeroSpace",
+      "category": "DESKTOP",
+      "description": "AeroSpace is an i3-like tiling window manager for macOS."
+    },
+    {
+      "repo": "noah-nuebling/mac-mouse-fix",
+      "url": "https://github.com/noah-nuebling/mac-mouse-fix",
+      "category": "DESKTOP",
+      "description": "Mac Mouse Fix - Make Your $10 Mouse Better Than an Apple Trackpad!"
+    },
+    {
+      "repo": "noctuid/evil-guide",
+      "url": "https://github.com/noctuid/evil-guide",
+      "category": "EMACS",
+      "description": "Draft of a guide for using emacs with evil."
+    },
+    {
+      "repo": "noctuid/general.el",
+      "url": "https://github.com/noctuid/general.el",
+      "category": "EMACS",
+      "description": "More convenient key definitions in emacs."
+    },
+    {
+      "repo": "noDRM/DeDRM_tools",
+      "url": "https://github.com/noDRM/DeDRM_tools",
+      "category": "NOTES",
+      "description": "DeDRM tools for ebooks."
+    },
+    {
+      "repo": "norgolith/core",
+      "url": "https://github.com/norgolith/core",
+      "category": "NOTES",
+      "description": "The monolithic Norg static site generator built with Rust."
+    },
+    {
+      "repo": "Nutlope/aicommits",
+      "url": "https://github.com/Nutlope/aicommits",
+      "category": "AI-CODE",
+      "description": "A CLI that writes your git commit messages for you with AI."
+    },
+    {
+      "repo": "NvChad/NvChad",
+      "url": "https://github.com/NvChad/NvChad",
+      "category": "NVIM",
+      "description": "Blazing fast Neovim framework providing solid defaults and a beautiful UI, enhancing your neovim experience."
+    },
+    {
+      "repo": "nvim-lua/kickstart.nvim",
+      "url": "https://github.com/nvim-lua/kickstart.nvim",
+      "category": "NVIM",
+      "description": "A launch point for your personal nvim configuration."
+    },
+    {
+      "repo": "nvim-lua/plenary.nvim",
+      "url": "https://github.com/nvim-lua/plenary.nvim",
+      "category": "NVIM",
+      "description": "plenary: full; complete; entire; absolute; unqualified. All the lua functions I don't want to write twice."
+    },
+    {
+      "repo": "nvim-mini/mini.nvim",
+      "url": "https://github.com/nvim-mini/mini.nvim",
+      "category": "NVIM",
+      "description": "Library of 45+ independent Lua modules improving Neovim experience with minimal effort."
+    },
+    {
+      "repo": "nvim-mini/MiniMax",
+      "url": "https://github.com/nvim-mini/MiniMax",
+      "category": "NVIM",
+      "description": "Neovim config examples based on MINI."
+    },
+    {
+      "repo": "nvim-neorg/neorg",
+      "url": "https://github.com/nvim-neorg/neorg",
+      "category": "NVIM",
+      "description": "Modernity meets insane extensibility. The future of organizing your life in Neovim."
+    },
+    {
+      "repo": "nvim-orgmode/orgmode",
+      "url": "https://github.com/nvim-orgmode/orgmode",
+      "category": "NVIM",
+      "description": "Orgmode clone written in Lua for Neovim 0.12.0+."
+    },
+    {
+      "repo": "nvim-pack/nvim-spectre",
+      "url": "https://github.com/nvim-pack/nvim-spectre",
+      "category": "NVIM",
+      "description": "Find the enemy and replace them with dark power."
+    },
+    {
+      "repo": "nvim-telescope/telescope.nvim",
+      "url": "https://github.com/nvim-telescope/telescope.nvim",
+      "category": "NVIM",
+      "description": "Find, Filter, Preview, Pick. All lua, all the time."
+    },
+    {
+      "repo": "nvimdev/lspsaga.nvim",
+      "url": "https://github.com/nvimdev/lspsaga.nvim",
+      "category": "NVIM",
+      "description": "improve neovim lsp experience."
+    },
+    {
+      "repo": "nvimtools/none-ls.nvim",
+      "url": "https://github.com/nvimtools/none-ls.nvim",
+      "category": "NVIM",
+      "description": "null-ls.nvim reloaded / Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua."
+    },
+    {
+      "repo": "obsidian-nvim/obsidian.nvim",
+      "url": "https://github.com/obsidian-nvim/obsidian.nvim",
+      "category": "NVIM",
+      "description": "Obsidian \ud83e\udd1d Neovim (actively maintained version)."
+    },
+    {
+      "repo": "obsidianmd/knap",
+      "url": "https://github.com/obsidianmd/knap",
+      "category": "NOTES",
+      "description": "A simple template language that turns data into Markdown."
+    },
+    {
+      "repo": "obsidianmd/pele",
+      "url": "https://github.com/obsidianmd/pele",
+      "category": "FRONTEND",
+      "description": "Renders Mermaid diagrams faster than you'd run from a volcano! \ud83c\udf0b."
+    },
+    {
+      "repo": "OffcierCia/DeFi-Developer-Road-Map",
+      "url": "https://github.com/OffcierCia/DeFi-Developer-Road-Map",
+      "category": "LEARN",
+      "description": "DeFi Developer roadmap is a curated Developer handbook which includes a list of the best tools for DApps development, resources and references!"
+    },
+    {
+      "repo": "olimorris/codecompanion.nvim",
+      "url": "https://github.com/olimorris/codecompanion.nvim",
+      "category": "NVIM",
+      "description": "AI-assisted coding and chat inside Neovim."
+    },
+    {
+      "repo": "OmniNull/OmniWM",
+      "url": "https://github.com/OmniNull/OmniWM",
+      "category": "DESKTOP",
+      "description": "Free, open-source tiling window manager for Apple Silicon Macs, with Niri-style scrolling containers and Hyprland-style Dwindle BSP."
+    },
+    {
+      "repo": "oniondelta/Onion_Rime_Files",
+      "url": "https://github.com/oniondelta/Onion_Rime_Files",
+      "category": "DESKTOP",
+      "description": "Rime input configurations for Zhuyin, Pinyin, and double Pinyin."
+    },
+    {
+      "repo": "Open-Less/openless",
+      "url": "https://github.com/Open-Less/openless",
+      "category": "AI-APPS",
+      "description": "Voice input that turns speech into polished text in desktop applications."
+    },
+    {
+      "repo": "opencode-ai/opencode",
+      "url": "https://github.com/opencode-ai/opencode",
+      "category": "AI-CODE",
+      "description": "A powerful AI coding agent. Built for the terminal."
+    },
+    {
+      "repo": "openreplay/openreplay",
+      "url": "https://github.com/openreplay/openreplay",
+      "category": "DEV",
+      "description": "Session replay, cobrowsing and product analytics you can self-host. Best for reproducing issues and iterating on your product."
+    },
+    {
+      "repo": "openvanilla/McBopomofo",
+      "url": "https://github.com/openvanilla/McBopomofo",
+      "category": "DESKTOP",
+      "description": "A lightweight Zhuyin input method for Chinese text."
+    },
+    {
+      "repo": "OpenWhispr/openwhispr",
+      "url": "https://github.com/OpenWhispr/openwhispr",
+      "category": "AI-APPS",
+      "description": "Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform."
+    },
+    {
+      "repo": "oraios/serena",
+      "url": "https://github.com/oraios/serena",
+      "category": "AI-CODE",
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities - the IDE for your agent."
+    },
+    {
+      "repo": "org-roam/org-roam",
+      "url": "https://github.com/org-roam/org-roam",
+      "category": "EMACS",
+      "description": "Rudimentary Roam replica with Org-mode."
+    },
+    {
+      "repo": "origin-brain/beat-ai",
+      "url": "https://github.com/origin-brain/beat-ai",
+      "category": "AI-ENG",
+      "description": "Introductory material covering neural networks and large language models."
+    },
+    {
+      "repo": "origin-brain/rust-by-practice",
+      "url": "https://github.com/origin-brain/rust-by-practice",
+      "category": "LEARN",
+      "description": "Rust By Practice will evolve into Origin."
+    },
+    {
+      "repo": "originjs/vite-plugin-federation",
+      "url": "https://github.com/originjs/vite-plugin-federation",
+      "category": "FRONTEND",
+      "description": "Module Federation for vite & rollup."
+    },
+    {
+      "repo": "oxc-project/oxc",
+      "url": "https://github.com/oxc-project/oxc",
+      "category": "FRONTEND",
+      "description": "A collection of high-performance JavaScript tools."
+    },
+    {
+      "repo": "OXY2DEV/markview.nvim",
+      "url": "https://github.com/OXY2DEV/markview.nvim",
+      "category": "NVIM",
+      "description": "A hackable markdown, Typst, latex, html(inline) & Asciidoc previewer for Neovim."
+    },
+    {
+      "repo": "PaddlePaddle/PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "category": "AI-ENG",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
+    },
+    {
+      "repo": "paperwm/PaperWM",
+      "url": "https://github.com/paperwm/PaperWM",
+      "category": "DESKTOP",
+      "description": "Tiled scrollable window management for GNOME Shell."
+    },
+    {
+      "repo": "Piebald-AI/claude-code-system-prompts",
+      "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+      "category": "AI-CODE",
+      "description": "A reference collection of Claude Code system and tool prompts."
+    },
+    {
+      "repo": "pmizio/typescript-tools.nvim",
+      "url": "https://github.com/pmizio/typescript-tools.nvim",
+      "category": "NVIM",
+      "description": "TypeScript integration NeoVim deserves \u26a1."
+    },
+    {
+      "repo": "pop-os/shell",
+      "url": "https://github.com/pop-os/shell",
+      "category": "DESKTOP",
+      "description": "Keyboard-driven tiling window management for GNOME Shell."
+    },
+    {
+      "repo": "poteto/how",
+      "url": "https://github.com/poteto/how",
+      "category": "AI-CODE",
+      "description": "skill for explaining architecture."
+    },
+    {
+      "repo": "prakhar1989/awesome-courses",
+      "url": "https://github.com/prakhar1989/awesome-courses",
+      "category": "LEARN",
+      "description": "List of awesome university courses for learning Computer Science!"
+    },
+    {
+      "repo": "progfolio/elpaca",
+      "url": "https://github.com/progfolio/elpaca",
+      "category": "EMACS",
+      "description": "An elisp package manager."
+    },
+    {
+      "repo": "projekt0n/github-nvim-theme",
+      "url": "https://github.com/projekt0n/github-nvim-theme",
+      "category": "NVIM",
+      "description": "GitHub's Neovim themes."
+    },
+    {
+      "repo": "promptfoo/promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "category": "AI-ENG",
+      "description": "Evaluation and security testing for prompts, agents, and RAG applications."
+    },
+    {
+      "repo": "protesilaos/denote",
+      "url": "https://github.com/protesilaos/denote",
+      "category": "EMACS",
+      "description": "Efficient file-naming scheme to organise files and write notes with Emacs."
+    },
+    {
+      "repo": "protesilaos/ef-themes",
+      "url": "https://github.com/protesilaos/ef-themes",
+      "category": "EMACS",
+      "description": "Colourful and legible themes for GNU Emacs."
+    },
+    {
+      "repo": "pubkey/rxdb",
+      "url": "https://github.com/pubkey/rxdb",
+      "category": "FRONTEND",
+      "description": "The local-first database that runs on every JS runtime and replicates with your existing backend - no vendor, no lock-in - https://rxdb.info/."
+    },
+    {
+      "repo": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "category": "LEARN",
+      "description": "A collective list of free APIs."
+    },
+    {
+      "repo": "purcell/exec-path-from-shell",
+      "url": "https://github.com/purcell/exec-path-from-shell",
+      "category": "EMACS",
+      "description": "Make Emacs use the $PATH set up by the user's shell."
+    },
+    {
+      "repo": "puxiao/webgpu-tutorial",
+      "url": "https://github.com/puxiao/webgpu-tutorial",
+      "category": "LEARN",
+      "description": "Tutorials on WebGPU programming."
+    },
+    {
+      "repo": "puxiao/wgsl-tutorial",
+      "url": "https://github.com/puxiao/wgsl-tutorial",
+      "category": "LEARN",
+      "description": "Tutorials on the WGSL shading language."
+    },
+    {
+      "repo": "QDenka/awesome-software-design",
+      "url": "https://github.com/QDenka/awesome-software-design",
+      "category": "LEARN",
+      "description": "Organizing and structuring software through patterns, decisions, and verified design rules."
+    },
+    {
+      "repo": "quantonganh/helix-wezterm",
+      "url": "https://github.com/quantonganh/helix-wezterm",
+      "category": "EDITORS",
+      "description": "Turning Helix into an IDE with the help of WezTerm and CLI tools."
+    },
+    {
+      "repo": "quarto-dev/quarto-nvim",
+      "url": "https://github.com/quarto-dev/quarto-nvim",
+      "category": "NVIM",
+      "description": "Quarto mode for Neovim."
+    },
+    {
+      "repo": "quickdrawjs/quickdraw",
+      "url": "https://github.com/quickdrawjs/quickdraw",
+      "category": "FRONTEND",
+      "description": "An infinite-canvas whiteboard SDK for React, React Native, and plain JavaScript."
+    },
+    {
+      "repo": "QwikDev/qwik",
+      "url": "https://github.com/QwikDev/qwik",
+      "category": "FRONTEND",
+      "description": "Instant-loading web apps, without effort."
+    },
+    {
+      "repo": "radian-software/apheleia",
+      "url": "https://github.com/radian-software/apheleia",
+      "category": "EMACS",
+      "description": "Run code formatter on buffer contents without moving point, using RCS patches and dynamic programming."
+    },
+    {
+      "repo": "ratfactor/ziglings",
+      "url": "https://github.com/ratfactor/ziglings",
+      "category": "LEARN",
+      "description": "Learn the Zig programming language by fixing tiny broken programs."
+    },
+    {
+      "repo": "raullenchai/Rapid-MLX",
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "category": "AI-ENG",
+      "description": "An OpenAI- and Anthropic-compatible LLM inference server for Apple Silicon."
+    },
+    {
+      "repo": "rcarriga/nvim-dap-ui",
+      "url": "https://github.com/rcarriga/nvim-dap-ui",
+      "category": "NVIM",
+      "description": "A UI for nvim-dap."
+    },
+    {
+      "repo": "react-grid-layout/react-grid-layout",
+      "url": "https://github.com/react-grid-layout/react-grid-layout",
+      "category": "FRONTEND",
+      "description": "A draggable and resizable grid layout with responsive breakpoints, for React."
+    },
+    {
+      "repo": "readwiseio/apple-notes-readwise",
+      "url": "https://github.com/readwiseio/apple-notes-readwise",
+      "category": "NOTES",
+      "description": "Export Readwise highlights to Apple Notes."
+    },
+    {
+      "repo": "reasonml/reason",
+      "url": "https://github.com/reasonml/reason",
+      "category": "FRONTEND",
+      "description": "Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems."
+    },
+    {
+      "repo": "rebelot/kanagawa.nvim",
+      "url": "https://github.com/rebelot/kanagawa.nvim",
+      "category": "NVIM",
+      "description": "NeoVim dark colorscheme inspired by the colors of the famous painting by Katsushika Hokusai."
+    },
+    {
+      "repo": "redguardtoo/evil-nerd-commenter",
+      "url": "https://github.com/redguardtoo/evil-nerd-commenter",
+      "category": "EMACS",
+      "description": "Comment/uncomment lines efficiently. Like Nerd Commenter in Vim."
+    },
+    {
+      "repo": "renzmann/treesit-auto",
+      "url": "https://github.com/renzmann/treesit-auto",
+      "category": "EMACS",
+      "description": "Automatic installation, usage, and fallback for tree-sitter major modes in Emacs 29."
+    },
+    {
+      "repo": "rime/squirrel",
+      "url": "https://github.com/rime/squirrel",
+      "category": "DESKTOP",
+      "description": "The Rime input method for macOS."
+    },
+    {
+      "repo": "rockerBOO/awesome-neovim",
+      "url": "https://github.com/rockerBOO/awesome-neovim",
+      "category": "NVIM",
+      "description": "Collections of awesome neovim plugins."
+    },
+    {
+      "repo": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "category": "AI-ENG",
+      "description": "Learn AI Engineering! Learn it. Build it. Ship it for others."
+    },
+    {
+      "repo": "rose-pine/neovim",
+      "url": "https://github.com/rose-pine/neovim",
+      "category": "NVIM",
+      "description": "The Rose Pine color theme for Neovim, with light and dark variants."
+    },
+    {
+      "repo": "rtk-ai/rtk",
+      "url": "https://github.com/rtk-ai/rtk",
+      "category": "AI-CODE",
+      "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies."
+    },
+    {
+      "repo": "ruicsh/nvim-config",
+      "url": "https://github.com/ruicsh/nvim-config",
+      "category": "NVIM",
+      "description": "There are many like it, but this one is mine."
+    },
+    {
+      "repo": "ryanoasis/nerd-fonts",
+      "url": "https://github.com/ryanoasis/nerd-fonts",
+      "category": "DESIGN",
+      "description": "Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more."
+    },
+    {
+      "repo": "saghen/blink.cmp",
+      "url": "https://github.com/saghen/blink.cmp",
+      "category": "NVIM",
+      "description": "Performant, batteries-included completion plugin for Neovim."
+    },
+    {
+      "repo": "sanyuan0704/sanyuan-skills",
+      "url": "https://github.com/sanyuan0704/sanyuan-skills",
+      "category": "AI-CODE",
+      "description": "Expert code review skill: SOLID, security, performance, error handling, boundary conditions."
+    },
+    {
+      "repo": "sarabander/sicp",
+      "url": "https://github.com/sarabander/sicp",
+      "category": "LEARN",
+      "description": "HTML5/EPUB3 version of SICP."
+    },
+    {
+      "repo": "saschb2b/cant-maintain",
+      "url": "https://github.com/saschb2b/cant-maintain",
+      "category": "LEARN",
+      "description": "A \"Can't Unsee\"-style training game that teaches junior React/TypeScript developers proper prop naming conventions and JSDoc documentation."
+    },
+    {
+      "repo": "scottmckendry/cyberdream.nvim",
+      "url": "https://github.com/scottmckendry/cyberdream.nvim",
+      "category": "NVIM",
+      "description": "High-contrast, Futuristic & Vibrant Neovim Colorscheme."
+    },
+    {
+      "repo": "seagle0128/doom-modeline",
+      "url": "https://github.com/seagle0128/doom-modeline",
+      "category": "EMACS",
+      "description": "A fancy and fast mode-line inspired by minimalism design."
+    },
+    {
+      "repo": "sentriz/cliphist",
+      "url": "https://github.com/sentriz/cliphist",
+      "category": "DESKTOP",
+      "description": "Wayland clipboard manager with support for multimedia."
+    },
+    {
+      "repo": "shadcn-labs/termcn",
+      "url": "https://github.com/shadcn-labs/termcn",
+      "category": "CLI",
+      "description": "Beautiful terminal UI components, built on Ink and OpenTUI. 100% Free, Zero config, one command setup."
+    },
+    {
+      "repo": "shfshanyue/blog",
+      "url": "https://github.com/shfshanyue/blog",
+      "category": "LEARN",
+      "description": "Practical articles on frontend, backend, and operations topics."
+    },
+    {
+      "repo": "shipshapecode/shepherd",
+      "url": "https://github.com/shipshapecode/shepherd",
+      "category": "FRONTEND",
+      "description": "Guide your users through a tour of your app."
+    },
+    {
+      "repo": "shuding/react-wrap-balancer",
+      "url": "https://github.com/shuding/react-wrap-balancer",
+      "category": "FRONTEND",
+      "description": "Simple React Component That Makes Titles More Readable."
+    },
+    {
+      "repo": "sigoden/aichat",
+      "url": "https://github.com/sigoden/aichat",
+      "category": "AI-APPS",
+      "description": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more."
+    },
+    {
+      "repo": "silverbulletmd/silverbullet",
+      "url": "https://github.com/silverbulletmd/silverbullet",
+      "category": "NOTES",
+      "description": "The malleable knowledge base for you and your team. Powered by Markdown and Lua."
+    },
+    {
+      "repo": "simrat39/symbols-outline.nvim",
+      "url": "https://github.com/simrat39/symbols-outline.nvim",
+      "category": "NVIM",
+      "description": "A tree like view for symbols in Neovim using the Language Server Protocol. Supports all your favourite languages."
+    },
+    {
+      "repo": "sindresorhus/awesome",
+      "url": "https://github.com/sindresorhus/awesome",
+      "category": "LEARN",
+      "description": "Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]."
+    },
+    {
+      "repo": "sindresorhus/Gifski",
+      "url": "https://github.com/sindresorhus/Gifski",
+      "category": "DESIGN",
+      "description": "Convert videos to high-quality GIFs on your Mac."
+    },
+    {
+      "repo": "sindrets/diffview.nvim",
+      "url": "https://github.com/sindrets/diffview.nvim",
+      "category": "NVIM",
+      "description": "Single tabpage interface for easily cycling through diffs for all modified files for any git rev."
+    },
+    {
+      "repo": "siyuan-note/siyuan",
+      "url": "https://github.com/siyuan-note/siyuan",
+      "category": "NOTES",
+      "description": "A privacy-focused, self-hosted knowledge management workspace."
+    },
+    {
+      "repo": "skindhu/Build-A-Large-Language-Model-CN",
+      "url": "https://github.com/skindhu/Build-A-Large-Language-Model-CN",
+      "category": "AI-ENG",
+      "description": "A Chinese translation of Build a Large Language Model (From Scratch)."
+    },
+    {
+      "repo": "smart-splits-nvim/smart-splits.nvim",
+      "url": "https://github.com/smart-splits-nvim/smart-splits.nvim",
+      "category": "NVIM",
+      "description": "Smart, seamless, directional navigation and resizing of Neovim + terminal multiplexer splits. Supports Zellij, Tmux, Wezterm, and Kitty. Think about splits in terms of \"up/down/left/right\"."
+    },
+    {
+      "repo": "smjonas/inc-rename.nvim",
+      "url": "https://github.com/smjonas/inc-rename.nvim",
+      "category": "NVIM",
+      "description": "Incremental LSP renaming based on Neovim's command-preview feature."
+    },
+    {
+      "repo": "snosov1/toc-org",
+      "url": "https://github.com/snosov1/toc-org",
+      "category": "EMACS",
+      "description": "toc-org is an Emacs utility to have an up-to-date table of contents in the org files without exporting (useful primarily for readme files on GitHub)."
+    },
+    {
+      "repo": "solidjs/solid",
+      "url": "https://github.com/solidjs/solid",
+      "category": "FRONTEND",
+      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+    },
+    {
+      "repo": "souporserious/next-remote-refresh",
+      "url": "https://github.com/souporserious/next-remote-refresh",
+      "category": "FRONTEND",
+      "description": "Enable Fast Refresh for remote data in Next.js."
+    },
+    {
+      "repo": "sparanoid/chinese-copywriting-guidelines",
+      "url": "https://github.com/sparanoid/chinese-copywriting-guidelines",
+      "category": "DESIGN",
+      "description": "Guidelines for Chinese typography, punctuation, and mixed-language writing."
+    },
+    {
+      "repo": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "category": "AI-CODE",
+      "description": "A workspace for running and coordinating coding agents across devices."
+    },
+    {
+      "repo": "stevearc/conform.nvim",
+      "url": "https://github.com/stevearc/conform.nvim",
+      "category": "NVIM",
+      "description": "Lightweight yet powerful formatter plugin for Neovim."
+    },
+    {
+      "repo": "stevearc/oil.nvim",
+      "url": "https://github.com/stevearc/oil.nvim",
+      "category": "NVIM",
+      "description": "Neovim file explorer: edit your filesystem like a buffer."
+    },
+    {
+      "repo": "storybookjs/storybook",
+      "url": "https://github.com/storybookjs/storybook",
+      "category": "DEV",
+      "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation."
+    },
+    {
+      "repo": "strands-agents/shell",
+      "url": "https://github.com/strands-agents/shell",
+      "category": "AI-ENG",
+      "description": "Give your agent a shell without giving it the keys to your machine."
+    },
+    {
+      "repo": "subdavis/kobo-book-downloader",
+      "url": "https://github.com/subdavis/kobo-book-downloader",
+      "category": "NOTES",
+      "description": "A tool to download and remove DRM from your purchased Kobo.com ebooks and audiobooks."
+    },
+    {
+      "repo": "subframe7536/maple-font",
+      "url": "https://github.com/subframe7536/maple-font",
+      "category": "DESIGN",
+      "description": "A customizable monospace font with ligatures and Nerd Font icons."
+    },
+    {
+      "repo": "sudheerj/reactjs-interview-questions",
+      "url": "https://github.com/sudheerj/reactjs-interview-questions",
+      "category": "LEARN",
+      "description": "List of top 500 ReactJS Interview Questions & Answers....Coding exercise questions are coming soon!!"
+    },
+    {
+      "repo": "sunface/rust-course",
+      "url": "https://github.com/sunface/rust-course",
+      "category": "LEARN",
+      "description": "A comprehensive Chinese-language Rust course."
+    },
+    {
+      "repo": "SunnyMaria/csapp-zh-markdown",
+      "url": "https://github.com/SunnyMaria/csapp-zh-markdown",
+      "category": "LEARN",
+      "description": "Chinese study materials, exercises, and labs for Computer Systems: A Programmer's Perspective."
+    },
+    {
+      "repo": "sxyazi/yazi",
+      "url": "https://github.com/sxyazi/yazi",
+      "category": "CLI",
+      "description": "Blazing fast terminal file manager written in Rust, based on async I/O."
+    },
+    {
+      "repo": "syl20bnr/evil-escape",
+      "url": "https://github.com/syl20bnr/evil-escape",
+      "category": "EMACS",
+      "description": "Customizable key sequence to escape from insert state and everything else in Emacs."
+    },
+    {
+      "repo": "SYSTRAN/faster-whisper",
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "category": "AI-ENG",
+      "description": "Faster Whisper transcription with CTranslate2."
+    },
+    {
+      "repo": "tarwin/tinyjsapp",
+      "url": "https://github.com/tarwin/tinyjsapp",
+      "category": "FRONTEND",
+      "description": "Build native apps in JS. Backend, frontend. ~5Mb."
+    },
+    {
+      "repo": "tensorflow/tfjs-models",
+      "url": "https://github.com/tensorflow/tfjs-models",
+      "category": "AI-ENG",
+      "description": "Pretrained models for TensorFlow.js."
+    },
+    {
+      "repo": "thaw-app/Thaw",
+      "url": "https://github.com/thaw-app/Thaw",
+      "category": "DESKTOP",
+      "description": "The open source menu bar manager."
+    },
+    {
+      "repo": "theninthsky/client-side-rendering",
+      "url": "https://github.com/theninthsky/client-side-rendering",
+      "category": "LEARN",
+      "description": "A case study of CSR."
+    },
+    {
+      "repo": "ThePrimeagen/harpoon",
+      "url": "https://github.com/ThePrimeagen/harpoon",
+      "category": "NVIM",
+      "description": "Quick navigation between marked files, terminals, and project commands in Neovim."
+    },
+    {
+      "repo": "thesysdev/openui",
+      "url": "https://github.com/thesysdev/openui",
+      "category": "FRONTEND",
+      "description": "A framework for turning model-generated output into interactive user interfaces."
+    },
+    {
+      "repo": "tiimgreen/github-cheat-sheet",
+      "url": "https://github.com/tiimgreen/github-cheat-sheet",
+      "category": "LEARN",
+      "description": "A list of cool features of Git and GitHub."
+    },
+    {
+      "repo": "tldraw/tldraw",
+      "url": "https://github.com/tldraw/tldraw",
+      "category": "FRONTEND",
+      "description": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK."
+    },
+    {
+      "repo": "tnfe/TNT-Weekly",
+      "url": "https://github.com/tnfe/TNT-Weekly",
+      "category": "LEARN",
+      "description": "A curated newsletter of frontend development articles and resources."
+    },
+    {
+      "repo": "TnS-hun/kobo-book-downloader",
+      "url": "https://github.com/TnS-hun/kobo-book-downloader",
+      "category": "NOTES",
+      "description": "A tool to download your purchased Kobo books and remove the DRM from them."
+    },
+    {
+      "repo": "toon-format/toon",
+      "url": "https://github.com/toon-format/toon",
+      "category": "AI-ENG",
+      "description": "Token-Oriented Object Notation (TOON) \u2013 compact, human-readable serialization of JSON data for LLM prompts. TypeScript SDK, CLI, benchmarks."
+    },
+    {
+      "repo": "toppair/peek.nvim",
+      "url": "https://github.com/toppair/peek.nvim",
+      "category": "NVIM",
+      "description": "Markdown preview plugin for Neovim."
+    },
+    {
+      "repo": "TriliumNext/Trilium",
+      "url": "https://github.com/TriliumNext/Trilium",
+      "category": "NOTES",
+      "description": "Build your personal knowledge base with Trilium Notes."
+    },
+    {
+      "repo": "trinib/Awesome-Mint-Setup",
+      "url": "https://github.com/trinib/Awesome-Mint-Setup",
+      "category": "DESKTOP",
+      "description": "Awesome setup for Linux Mint Cinnamon (Ubuntu)."
+    },
+    {
+      "repo": "trylovetom/clean-code-javascript",
+      "url": "https://github.com/trylovetom/clean-code-javascript",
+      "category": "LEARN",
+      "description": "Clean Code principles illustrated with JavaScript examples."
+    },
+    {
+      "repo": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "category": "AI-CODE",
+      "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more."
+    },
+    {
+      "repo": "tw93/Mole",
+      "url": "https://github.com/tw93/Mole",
+      "category": "DESKTOP",
+      "description": "Keep your Mac and PC clean, light, and running like new. Fast open-source CLI, plus native Mac and Windows apps."
+    },
+    {
+      "repo": "type-challenges/type-challenges",
+      "url": "https://github.com/type-challenges/type-challenges",
+      "category": "LEARN",
+      "description": "Collection of TypeScript type challenges with online judge."
+    },
+    {
+      "repo": "typehero/typehero",
+      "url": "https://github.com/typehero/typehero",
+      "category": "LEARN",
+      "description": "Connect, collaborate, and grow with a community of TypeScript developers."
+    },
+    {
+      "repo": "ublue-os/bluefin",
+      "url": "https://github.com/ublue-os/bluefin",
+      "category": "DESKTOP",
+      "description": "The next generation Linux workstation, designed for reliability, performance, and sustainability."
+    },
+    {
+      "repo": "unkn0wn-root/resterm",
+      "url": "https://github.com/unkn0wn-root/resterm",
+      "category": "DEV",
+      "description": "Terminal API client for HTTP, GraphQL, gRPC, WebSocket and SSE. Plain .http files you can diff and version, with scripted tests, workflows, mocks, recorder, and a CLI runner for CI."
+    },
+    {
+      "repo": "upstash/context7",
+      "url": "https://github.com/upstash/context7",
+      "category": "AI-CODE",
+      "description": "Context7 Platform -- Up-to-date docs for AI agents."
+    },
+    {
+      "repo": "usememos/memos",
+      "url": "https://github.com/usememos/memos",
+      "category": "NOTES",
+      "description": "A timeline for your thoughts. Just type. It stays yours."
+    },
+    {
+      "repo": "utmapp/UTM",
+      "url": "https://github.com/utmapp/UTM",
+      "category": "DESKTOP",
+      "description": "Virtual machines for iOS and macOS."
+    },
+    {
+      "repo": "vasanthk/react-bits",
+      "url": "https://github.com/vasanthk/react-bits",
+      "category": "LEARN",
+      "description": "React patterns, techniques, tips and tricks \u2728."
+    },
+    {
+      "repo": "vChewing/vChewing-macOS",
+      "url": "https://github.com/vChewing/vChewing-macOS",
+      "category": "DESKTOP",
+      "description": "A macOS Chinese input method supporting Zhuyin and Pinyin."
+    },
+    {
+      "repo": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "category": "DEV",
+      "description": "Browser automation CLI for AI agents."
+    },
+    {
+      "repo": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "category": "AI-CODE",
+      "description": "The open agent skills tool - npx skills."
+    },
+    {
+      "repo": "vitejs/awesome-vite",
+      "url": "https://github.com/vitejs/awesome-vite",
+      "category": "LEARN",
+      "description": "A curated list of awesome things related to Vite.js."
+    },
+    {
+      "repo": "VonHeikemen/lsp-zero.nvim",
+      "url": "https://github.com/VonHeikemen/lsp-zero.nvim",
+      "category": "NVIM",
+      "description": "A starting point to setup some lsp related features in neovim."
+    },
+    {
+      "repo": "Vonng/ddia",
+      "url": "https://github.com/Vonng/ddia",
+      "category": "LEARN",
+      "description": "Chinese translations of Designing Data-Intensive Applications."
+    },
+    {
+      "repo": "vueuse/vueuse",
+      "url": "https://github.com/vueuse/vueuse",
+      "category": "FRONTEND",
+      "description": "Collection of essential Vue Composition Utilities for Vue 3."
+    },
+    {
+      "repo": "W4G1/multithreading",
+      "url": "https://github.com/W4G1/multithreading",
+      "category": "FRONTEND",
+      "description": "The missing standard library for multithreading in JavaScript (Works in the browser, Node.js, Deno, Bun)."
+    },
+    {
+      "repo": "walkinglabs/learn-harness-engineering",
+      "url": "https://github.com/walkinglabs/learn-harness-engineering",
+      "category": "AI-ENG",
+      "description": "Harness engineering beginner tutorial, from 0 to 1."
+    },
+    {
+      "repo": "WangRongsheng/awesome-LLM-resources",
+      "url": "https://github.com/WangRongsheng/awesome-LLM-resources",
+      "category": "AI-ENG",
+      "description": "Curated resources on LLMs, agents, multimodal models, and AI engineering."
+    },
+    {
+      "repo": "WasmEdge/WasmEdge",
+      "url": "https://github.com/WasmEdge/WasmEdge",
+      "category": "INFRA",
+      "description": "A WebAssembly runtime for cloud, edge, and embedded applications."
+    },
+    {
+      "repo": "wasmerio/wasmer",
+      "url": "https://github.com/wasmerio/wasmer",
+      "category": "INFRA",
+      "description": "Fast and lightweight sandboxes for your apps and AI agents."
+    },
+    {
+      "repo": "waydabber/BetterDisplay",
+      "url": "https://github.com/waydabber/BetterDisplay",
+      "category": "DESKTOP",
+      "description": "Unlock your displays on your Mac. Flexible HiDPI scaling, XDR/HDR extra brightness, virtual screens, DDC control, image adjustments, PIP/streaming, EDID override. More info - betterdisplay.pro/guide."
+    },
+    {
+      "repo": "web-infra-dev/rspack",
+      "url": "https://github.com/web-infra-dev/rspack",
+      "category": "FRONTEND",
+      "description": "Fast Rust-based bundler for the web with a modernized webpack API \ud83e\udd80."
+    },
+    {
+      "repo": "web-padawan/awesome-web-components",
+      "url": "https://github.com/web-padawan/awesome-web-components",
+      "category": "LEARN",
+      "description": "A curated list of awesome Web Components resources."
+    },
+    {
+      "repo": "WebAssembly/wasi-nn",
+      "url": "https://github.com/WebAssembly/wasi-nn",
+      "category": "AI-ENG",
+      "description": "Neural Network proposal for WASI."
+    },
+    {
+      "repo": "webmachinelearning/webmcp",
+      "url": "https://github.com/webmachinelearning/webmcp",
+      "category": "AI-ENG",
+      "description": "A proposal for exposing structured web application tools to AI agents."
+    },
+    {
+      "repo": "wezterm/wezterm",
+      "url": "https://github.com/wezterm/wezterm",
+      "category": "CLI",
+      "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust."
+    },
+    {
+      "repo": "Wilfred/difftastic",
+      "url": "https://github.com/Wilfred/difftastic",
+      "category": "DEV",
+      "description": "a structural diff that understands syntax \ud83d\udfe5\ud83d\udfe9."
+    },
+    {
+      "repo": "Wilfred/helpful",
+      "url": "https://github.com/Wilfred/helpful",
+      "category": "EMACS",
+      "description": "A better Emacs *help* buffer."
+    },
+    {
+      "repo": "winboat-org/winboat",
+      "url": "https://github.com/winboat-org/winboat",
+      "category": "DESKTOP",
+      "description": "Run Windows apps on \ud83d\udc27 Linux with \u2728 seamless integration."
+    },
+    {
+      "repo": "withastro/astro",
+      "url": "https://github.com/withastro/astro",
+      "category": "FRONTEND",
+      "description": "The web framework for content-driven websites."
+    },
+    {
+      "repo": "wsdjeg/vim-galore-zh_cn",
+      "url": "https://github.com/wsdjeg/vim-galore-zh_cn",
+      "category": "NVIM",
+      "description": "A Chinese guide to Vim, from basics to advanced usage."
+    },
+    {
+      "repo": "wzhudev/reverse-linear-sync-engine",
+      "url": "https://github.com/wzhudev/reverse-linear-sync-engine",
+      "category": "LEARN",
+      "description": "A reverse engineering of Linear's sync engine."
+    },
+    {
+      "repo": "xai-org/grok-build",
+      "url": "https://github.com/xai-org/grok-build",
+      "category": "AI-CODE",
+      "description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible."
+    },
+    {
+      "repo": "xenodium/agent-shell",
+      "url": "https://github.com/xenodium/agent-shell",
+      "category": "EMACS",
+      "description": "Brings your favorite AI agents to Emacs, keeping you at home: familiar buffers and bindings, no terminal emulation. Powered by ACP."
+    },
+    {
+      "repo": "xheisenbugx/org.nvim",
+      "url": "https://github.com/xheisenbugx/org.nvim",
+      "category": "NVIM",
+      "description": "Org mode for neovim."
+    },
+    {
+      "repo": "xwmx/nb",
+      "url": "https://github.com/xwmx/nb",
+      "category": "NOTES",
+      "description": "A command-line note-taking, bookmarking, and archiving tool with Git integration."
+    },
+    {
+      "repo": "Yevgnen/ivy-rich",
+      "url": "https://github.com/Yevgnen/ivy-rich",
+      "category": "EMACS",
+      "description": "More friendly interface for ivy."
+    },
+    {
+      "repo": "yzfly/Awesome-MCP-ZH",
+      "url": "https://github.com/yzfly/Awesome-MCP-ZH",
+      "category": "AI-ENG",
+      "description": "Chinese guides and curated resources for MCP servers and clients."
+    },
+    {
+      "repo": "zap-zsh/zap",
+      "url": "https://github.com/zap-zsh/zap",
+      "category": "CLI",
+      "description": "Zap is a minimal zsh plugin manager."
+    },
+    {
+      "repo": "zdharma-continuum/zinit",
+      "url": "https://github.com/zdharma-continuum/zinit",
+      "category": "CLI",
+      "description": "Flexible and fast ZSH plugin manager."
+    },
+    {
+      "repo": "zed-industries/zed",
+      "url": "https://github.com/zed-industries/zed",
+      "category": "EDITORS",
+      "description": "Code at the speed of thought \u2013 Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
+    },
+    {
+      "repo": "zellij-org/zellij",
+      "url": "https://github.com/zellij-org/zellij",
+      "category": "CLI",
+      "description": "A terminal workspace with batteries included."
+    },
+    {
+      "repo": "zen-browser/desktop",
+      "url": "https://github.com/zen-browser/desktop",
+      "category": "DESKTOP",
+      "description": "The Zen desktop web browser."
+    },
+    {
+      "repo": "zenbu-labs/terminal-browser",
+      "url": "https://github.com/zenbu-labs/terminal-browser",
+      "category": "CLI",
+      "description": "A real browser inside your terminal."
+    },
+    {
+      "repo": "Zettlr/Zettlr",
+      "url": "https://github.com/Zettlr/Zettlr",
+      "category": "NOTES",
+      "description": "A desktop workspace for writing, research, and publishing."
+    },
+    {
+      "repo": "zk-org/zk",
+      "url": "https://github.com/zk-org/zk",
+      "category": "NOTES",
+      "description": "A plain text note-taking assistant."
+    },
+    {
+      "repo": "zloirock/core-js",
+      "url": "https://github.com/zloirock/core-js",
+      "category": "FRONTEND",
+      "description": "JavaScript standard library polyfills and compatibility utilities."
+    },
+    {
+      "repo": "zonble/understanding_audio_files",
+      "url": "https://github.com/zonble/understanding_audio_files",
+      "category": "LEARN",
+      "description": "Chinese educational material explaining audio file formats."
+    },
+    {
+      "repo": "zplug/zplug",
+      "url": "https://github.com/zplug/zplug",
+      "category": "CLI",
+      "description": "A next-generation plugin manager for zsh \u2014 manage plugins, commands, and themes from GitHub, Bitbucket, oh-my-zsh, prezto, and more with parallel installation and lazy loading."
+    },
+    {
+      "repo": "zurawiki/gptcommit",
+      "url": "https://github.com/zurawiki/gptcommit",
+      "category": "AI-CODE",
+      "description": "A git prepare-commit-msg hook for authoring commit messages with LLMs."
+    },
+    {
+      "repo": "zwbetz-gh/cupper-hugo-theme",
+      "url": "https://github.com/zwbetz-gh/cupper-hugo-theme",
+      "category": "NOTES",
+      "description": "An accessibility-friendly Hugo theme, ported from the original Cupper project."
+    }
+  ]
+}
