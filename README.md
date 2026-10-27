@@ -5,8 +5,8 @@ A categorized collection of my starred GitHub projects, with short English descr
 ## Contents
 
 - [AI Coding & Skills](#ai-coding--skills) (53)
-- [AI Apps & Automation](#ai-apps--automation) (16)
-- [LLM & AI Engineering](#llm--ai-engineering) (36)
+- [AI Apps & Automation](#ai-apps--automation) (17)
+- [LLM & AI Engineering](#llm--ai-engineering) (37)
 - [Frontend & UI](#frontend--ui) (33)
 - [Dev Tools & Testing](#dev-tools--testing) (17)
 - [Emacs](#emacs) (46)
@@ -101,6 +101,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [Open-Less/openless](https://github.com/Open-Less/openless) — Voice input that turns speech into polished text in desktop applications.
 - [OpenWhispr/openwhispr](https://github.com/OpenWhispr/openwhispr) — Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform.
 - [sigoden/aichat](https://github.com/sigoden/aichat) — All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.
+- [thesysdev/open-intelligent-ui](https://github.com/thesysdev/open-intelligent-ui) — OpenUI-based chat demo that renders streamed answers as interactive maps, charts, images, and tools.
 
 ## LLM & AI Engineering
 
@@ -112,6 +113,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [bojieli/ai-infra-book](https://github.com/bojieli/ai-infra-book) — An open book on quantitative analysis and system design for LLM training and inference.
 - [buchidonggua/dg-ai-notes](https://github.com/buchidonggua/dg-ai-notes) — Agent engineering notes, Pi SDK walkthroughs, and practical examples.
 - [deepseek-ai/awesome-deepseek-integration](https://github.com/deepseek-ai/awesome-deepseek-integration) — Integrate the DeepSeek API into popular software.
+- [eecs498-aase/materials](https://github.com/eecs498-aase/materials) — Lecture slides, lab handouts, and demos for the University of Michigan Applied Agentic Software Engineering course.
 - [exa-labs/exa-mcp-server](https://github.com/exa-labs/exa-mcp-server) — Exa MCP for web search and web crawling!
 - [FL33TW00D/whisper-turbo](https://github.com/FL33TW00D/whisper-turbo) — Cross-Platform, GPU Accelerated Whisper 🏎️.
 - [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) — LLM inference in C/C++.

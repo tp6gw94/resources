@@ -623,6 +623,12 @@
       "description": "A highly customizable theme for vim and neovim with support for lsp, treesitter and a variety of plugins."
     },
     {
+      "repo": "eecs498-aase/materials",
+      "url": "https://github.com/eecs498-aase/materials",
+      "category": "AI-ENG",
+      "description": "Lecture slides, lab handouts, and demos for the University of Michigan Applied Agentic Software Engineering course."
+    },
+    {
       "repo": "ekickx/clipboard-image.nvim",
       "url": "https://github.com/ekickx/clipboard-image.nvim",
       "category": "NVIM",
@@ -2337,6 +2343,12 @@
       "url": "https://github.com/ThePrimeagen/harpoon",
       "category": "NVIM",
       "description": "Quick navigation between marked files, terminals, and project commands in Neovim."
+    },
+    {
+      "repo": "thesysdev/open-intelligent-ui",
+      "url": "https://github.com/thesysdev/open-intelligent-ui",
+      "category": "AI-APPS",
+      "description": "OpenUI-based chat demo that renders streamed answers as interactive maps, charts, images, and tools."
     },
     {
       "repo": "thesysdev/openui",
