@@ -6,7 +6,7 @@ A categorized collection of my starred GitHub projects, with short English descr
 
 - [AI Coding & Skills](#ai-coding--skills) (53)
 - [AI Apps & Automation](#ai-apps--automation) (17)
-- [LLM & AI Engineering](#llm--ai-engineering) (37)
+- [LLM & AI Engineering](#llm--ai-engineering) (39)
 - [Frontend & UI](#frontend--ui) (33)
 - [Dev Tools & Testing](#dev-tools--testing) (17)
 - [Emacs](#emacs) (46)
@@ -126,10 +126,12 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [mlc-ai/web-llm](https://github.com/mlc-ai/web-llm) — High-performance In-browser LLM Inference Engine.
 - [modelcontextprotocol/ext-apps](https://github.com/modelcontextprotocol/ext-apps) — Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers.
 - [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) — A multilingual decision engine for typed choices, scoring, and yes-or-no decisions.
+- [natolambert/rlhf-book](https://github.com/natolambert/rlhf-book) — Textbook and reference implementations for reinforcement learning from human feedback and language model post-training.
 - [Nicolepcx/ai-agents-the-definitive-guide](https://github.com/Nicolepcx/ai-agents-the-definitive-guide) — Repo for AI Agents The Definitive Guide.
 - [origin-brain/beat-ai](https://github.com/origin-brain/beat-ai) — Introductory material covering neural networks and large language models.
 - [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) — Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.
 - [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) — Evaluation and security testing for prompts, agents, and RAG applications.
+- [rasbt/reasoning-from-scratch](https://github.com/rasbt/reasoning-from-scratch) — PyTorch code and notebooks for building LLM reasoning capabilities through inference-time scaling, reinforcement learning, and distillation.
 - [raullenchai/Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) — An OpenAI- and Anthropic-compatible LLM inference server for Apple Silicon.
 - [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) — Learn AI Engineering! Learn it. Build it. Ship it for others.
 - [skindhu/Build-A-Large-Language-Model-CN](https://github.com/skindhu/Build-A-Large-Language-Model-CN) — A Chinese translation of Build a Large Language Model (From Scratch).

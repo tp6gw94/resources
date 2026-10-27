@@ -1571,6 +1571,12 @@
       "description": "A multilingual decision engine for typed choices, scoring, and yes-or-no decisions."
     },
     {
+      "repo": "natolambert/rlhf-book",
+      "url": "https://github.com/natolambert/rlhf-book",
+      "category": "AI-ENG",
+      "description": "Textbook and reference implementations for reinforcement learning from human feedback and language model post-training."
+    },
+    {
       "repo": "neovide/neovide",
       "url": "https://github.com/neovide/neovide",
       "category": "NVIM",
@@ -1989,6 +1995,12 @@
       "url": "https://github.com/radian-software/apheleia",
       "category": "EMACS",
       "description": "Run code formatter on buffer contents without moving point, using RCS patches and dynamic programming."
+    },
+    {
+      "repo": "rasbt/reasoning-from-scratch",
+      "url": "https://github.com/rasbt/reasoning-from-scratch",
+      "category": "AI-ENG",
+      "description": "PyTorch code and notebooks for building LLM reasoning capabilities through inference-time scaling, reinforcement learning, and distillation."
     },
     {
       "repo": "ratfactor/ziglings",
