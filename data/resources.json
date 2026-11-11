@@ -389,12 +389,6 @@
       "description": "A lightweight WebAssembly runtime that is fast, secure, and standards-compliant."
     },
     {
-      "repo": "calesthio/OpenMontage",
-      "url": "https://github.com/calesthio/OpenMontage",
-      "category": "AI-APPS",
-      "description": "An agent-based video production system with reusable tools and workflows."
-    },
-    {
       "repo": "cathrynlavery/diagram-design",
       "url": "https://github.com/cathrynlavery/diagram-design",
       "category": "AI-CODE",
@@ -719,12 +713,6 @@
       "description": "A job board maintained by Taiwan's frontend community."
     },
     {
-      "repo": "facebook/docusaurus",
-      "url": "https://github.com/facebook/docusaurus",
-      "category": "NOTES",
-      "description": "Easy to maintain open source documentation websites."
-    },
-    {
       "repo": "fallow-rs/fallow",
       "url": "https://github.com/fallow-rs/fallow",
       "category": "DEV",
@@ -893,6 +881,12 @@
       "description": "A research framework for improving agent prompts, tools, memory, and orchestration."
     },
     {
+      "repo": "google/elephant-goldfish-model",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "category": "AI-CODE",
+      "description": "An AI assistant plugin for drafting software specifications and reviewing them with fresh context."
+    },
+    {
       "repo": "googlefonts/compute-shader-101",
       "url": "https://github.com/googlefonts/compute-shader-101",
       "category": "LEARN",
@@ -909,6 +903,12 @@
       "url": "https://github.com/gpakosz/.tmux",
       "category": "CLI",
       "description": "Oh my tmux! My self-contained, pretty & versatile tmux configuration made with \ud83d\udc9b\ud83e\ude77\ud83d\udc99\ud83d\udda4\u2764\ufe0f\ud83e\udd0d."
+    },
+    {
+      "repo": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "category": "AI-CODE",
+      "description": "An agent skill and CLI that turn code and documents into a queryable knowledge graph."
     },
     {
       "repo": "greatfrontend/awesome-front-end-system-design",
@@ -975,6 +975,12 @@
       "url": "https://github.com/herdrdev/herdr",
       "category": "AI-CODE",
       "description": "the runtime your coding agents live on."
+    },
+    {
+      "repo": "herdrdev/herdr-app",
+      "url": "https://github.com/herdrdev/herdr-app",
+      "category": "AI-CODE",
+      "description": "A desktop workspace for persistent terminals and coding agents."
     },
     {
       "repo": "heygen-com/hyperframes",
@@ -1149,6 +1155,12 @@
       "url": "https://github.com/jtbm37/all-the-icons-dired",
       "category": "EMACS",
       "description": "Adds dired support to all-the-icons."
+    },
+    {
+      "repo": "jub0t/Concat",
+      "url": "https://github.com/jub0t/Concat",
+      "category": "DESIGN",
+      "description": "A local-first video editor with JSON-RPC and MCP automation."
     },
     {
       "repo": "JuliusBrussee/caveman",
@@ -1383,6 +1395,12 @@
       "url": "https://github.com/meow-edit/meow",
       "category": "EMACS",
       "description": "Modal editing for Emacs."
+    },
+    {
+      "repo": "meta/docusaurus",
+      "url": "https://github.com/meta/docusaurus",
+      "category": "NOTES",
+      "description": "Easy to maintain open source documentation websites."
     },
     {
       "repo": "mfontanini/presenterm",
@@ -1797,6 +1815,18 @@
       "url": "https://github.com/opencode-ai/opencode",
       "category": "AI-CODE",
       "description": "A powerful AI coding agent. Built for the terminal."
+    },
+    {
+      "repo": "OpenCut-app/OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "category": "DESIGN",
+      "description": "An open-source video editor being rebuilt for web, desktop, and mobile."
+    },
+    {
+      "repo": "OpenMontageInc/OpenMontage",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "category": "AI-APPS",
+      "description": "An agent-based video production system with reusable tools and workflows."
     },
     {
       "repo": "openreplay/openreplay",

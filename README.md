@@ -4,7 +4,7 @@ A categorized collection of my starred GitHub projects, with short English descr
 
 ## Contents
 
-- [AI Coding & Skills](#ai-coding--skills) (53)
+- [AI Coding & Skills](#ai-coding--skills) (56)
 - [AI Apps & Automation](#ai-apps--automation) (17)
 - [LLM & AI Engineering](#llm--ai-engineering) (39)
 - [Frontend & UI](#frontend--ui) (33)
@@ -17,7 +17,7 @@ A categorized collection of my starred GitHub projects, with short English descr
 - [Desktop & OS](#desktop--os) (29)
 - [Infra & Self-hosting](#infra--self-hosting) (7)
 - [CS & Learning](#cs--learning) (51)
-- [Design & Media](#design--media) (12)
+- [Design & Media](#design--media) (14)
 
 ## About this collection
 
@@ -55,8 +55,11 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [Gentleman-Programming/gentle-ai](https://github.com/Gentleman-Programming/gentle-ai) — Configuration tooling for coding agents, skills, memory, and MCP integrations.
 - [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) — MCP server to provide Figma layout information to AI coding agents like Cursor.
 - [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) — An open-source AI agent that brings the power of Gemini directly into your terminal.
+- [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) — An AI assistant plugin for drafting software specifications and reviewing them with fresh context.
+- [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) — An agent skill and CLI that turn code and documents into a queryable knowledge graph.
 - [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) — A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.
 - [herdrdev/herdr](https://github.com/herdrdev/herdr) — the runtime your coding agents live on.
+- [herdrdev/herdr-app](https://github.com/herdrdev/herdr-app) — A desktop workspace for persistent terminals and coding agents.
 - [joshuakatt/Bob-The-Builder](https://github.com/joshuakatt/Bob-The-Builder) — Autonomous task orchestrator for Kiro + Claude specs.
 - [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.
 - [langchain-ai/openwiki](https://github.com/langchain-ai/openwiki) — OpenWiki is a CLI that writes and maintains agent documentation for your codebase.
@@ -89,7 +92,6 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [AsyncFuncAI/deepwiki-open](https://github.com/AsyncFuncAI/deepwiki-open) — Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme.
 - [browseros-ai/BrowserOS](https://github.com/browseros-ai/BrowserOS) — The open-source Agentic browser; alternative to ChatGPT Atlas, Perplexity Comet, Dia.
 - [btahir/open-deep-research](https://github.com/btahir/open-deep-research) — Open source alternative to Gemini Deep Research. Generate reports with AI based on search results.
-- [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) — An agent-based video production system with reusable tools and workflows.
 - [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) — AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs.
 - [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) — A browser automation tool that lets AI agents use an existing browser session.
 - [Companion-Inc/feynman](https://github.com/Companion-Inc/feynman) — The open source AI research agent.
@@ -99,6 +101,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [mengxi-ream/read-frog](https://github.com/mengxi-ream/read-frog) — AI-assisted bilingual reading, language learning, and flashcards.
 - [nickscamara/open-deep-research](https://github.com/nickscamara/open-deep-research) — An open source deep research clone. AI Agent that reasons large amounts of web data extracted with Firecrawl.
 - [Open-Less/openless](https://github.com/Open-Less/openless) — Voice input that turns speech into polished text in desktop applications.
+- [OpenMontageInc/OpenMontage](https://github.com/OpenMontageInc/OpenMontage) — An agent-based video production system with reusable tools and workflows.
 - [OpenWhispr/openwhispr](https://github.com/OpenWhispr/openwhispr) — Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform.
 - [sigoden/aichat](https://github.com/sigoden/aichat) — All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.
 - [thesysdev/open-intelligent-ui](https://github.com/thesysdev/open-intelligent-ui) — OpenUI-based chat demo that renders streamed answers as interactive maps, charts, images, and tools.
@@ -378,7 +381,6 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [blinkospace/blinko](https://github.com/blinkospace/blinko) — An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript .
 - [charmbracelet/glow](https://github.com/charmbracelet/glow) — Render markdown on the CLI, with pizzazz! 💅🏻.
 - [drunkdream/weread-exporter](https://github.com/drunkdream/weread-exporter) — Tools for exporting WeRead books to common ebook formats.
-- [facebook/docusaurus](https://github.com/facebook/docusaurus) — Easy to maintain open source documentation websites.
 - [fharper/awesome-supernote](https://github.com/fharper/awesome-supernote) — A curated list of projects, templates or anything interesting related to the Supernote tablet.
 - [flowershow/flowershow](https://github.com/flowershow/flowershow) — Publish markdown (and html) websites, docs, wikis and websites in seconds. Integrates with your AI.
 - [iamgio/quarkdown](https://github.com/iamgio/quarkdown) — Markdown with superpowers: from ideas to papers, presentations, websites, books, and knowledge bases.
@@ -389,6 +391,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [kepano/obsidian-minimal](https://github.com/kepano/obsidian-minimal) — A distraction-free and highly customizable theme for Obsidian.
 - [Leseratte10/acsm-calibre-plugin](https://github.com/Leseratte10/acsm-calibre-plugin) — Calibre plugin for ACSM->EPUB and ACSM->PDF conversion.
 - [MaggieAppleton/digital-gardeners](https://github.com/MaggieAppleton/digital-gardeners) — Resources, links, projects, and ideas for gardeners tending their digital notes on the public interwebs.
+- [meta/docusaurus](https://github.com/meta/docusaurus) — Easy to maintain open source documentation websites.
 - [Molunerfinn/PicGo](https://github.com/Molunerfinn/PicGo) — The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done.
 - [noDRM/DeDRM_tools](https://github.com/noDRM/DeDRM_tools) — DeDRM tools for ebooks.
 - [norgolith/core](https://github.com/norgolith/core) — The monolithic Norg static site generator built with Rust.
@@ -509,8 +512,10 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [googlefonts/googlesans-code](https://github.com/googlefonts/googlesans-code) — The Google Sans Code font family.
 - [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) — Write HTML. Render video. Built for agents.
 - [JimmyLv/awesome-nano-banana](https://github.com/JimmyLv/awesome-nano-banana) — A collection of image generation examples and prompts for Gemini image models.
+- [jub0t/Concat](https://github.com/jub0t/Concat) — A local-first video editor with JSON-RPC and MCP automation.
 - [mifi/lossless-cut](https://github.com/mifi/lossless-cut) — The swiss army knife of lossless video/audio editing.
 - [mixn/carbon-now-cli](https://github.com/mixn/carbon-now-cli) — Beautiful images of your code — from right inside your terminal.
+- [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) — An open-source video editor being rebuilt for web, desktop, and mobile.
 - [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts) — Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more.
 - [sindresorhus/Gifski](https://github.com/sindresorhus/Gifski) — Convert videos to high-quality GIFs on your Mac.
 - [sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) — Guidelines for Chinese typography, punctuation, and mixed-language writing.
