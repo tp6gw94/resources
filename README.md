@@ -4,14 +4,14 @@ A categorized collection of my starred GitHub projects, with short English descr
 
 ## Contents
 
-- [AI Coding & Skills](#ai-coding--skills) (56)
+- [AI Coding & Skills](#ai-coding--skills) (57)
 - [AI Apps & Automation](#ai-apps--automation) (17)
 - [LLM & AI Engineering](#llm--ai-engineering) (39)
 - [Frontend & UI](#frontend--ui) (33)
 - [Dev Tools & Testing](#dev-tools--testing) (17)
 - [Emacs](#emacs) (46)
 - [Neovim & Vim](#neovim--vim) (75)
-- [Editors & LSP](#editors--lsp) (14)
+- [Editors & LSP](#editors--lsp) (15)
 - [CLI & Terminal](#cli--terminal) (22)
 - [Notes & Publishing](#notes--publishing) (32)
 - [Desktop & OS](#desktop--os) (29)
@@ -56,6 +56,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) — MCP server to provide Figma layout information to AI coding agents like Cursor.
 - [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) — An open-source AI agent that brings the power of Gemini directly into your terminal.
 - [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) — An AI assistant plugin for drafting software specifications and reviewing them with fresh context.
+- [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) — Agent skills and a CLI for modern web APIs, accessibility, and browser compatibility.
 - [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) — An agent skill and CLI that turn code and documents into a queryable knowledge graph.
 - [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) — A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.
 - [herdrdev/herdr](https://github.com/herdrdev/herdr) — the runtime your coding agents live on.
@@ -344,6 +345,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [leona/helix-gpt](https://github.com/leona/helix-gpt) — Code assistant language server for Helix with support for Copilot/OpenAI/Codeium/Ollama.
 - [mattn/efm-langserver](https://github.com/mattn/efm-langserver) — General purpose Language Server.
 - [mawww/kakoune](https://github.com/mawww/kakoune) — mawww's experiment for a better code editor.
+- [mitos-editor/mitos](https://github.com/mitos-editor/mitos) — A Helix-derived modal text editor with built-in LSP and tree-sitter support.
 - [neurocyte/flow](https://github.com/neurocyte/flow) — Flow Control: a programmer's text editor.
 - [quantonganh/helix-wezterm](https://github.com/quantonganh/helix-wezterm) — Turning Helix into an IDE with the help of WezTerm and CLI tools.
 - [zed-industries/zed](https://github.com/zed-industries/zed) — Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.

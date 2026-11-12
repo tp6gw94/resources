@@ -887,6 +887,12 @@
       "description": "An AI assistant plugin for drafting software specifications and reviewing them with fresh context."
     },
     {
+      "repo": "GoogleChrome/modern-web-guidance",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "category": "AI-CODE",
+      "description": "Agent skills and a CLI for modern web APIs, accessibility, and browser compatibility."
+    },
+    {
       "repo": "googlefonts/compute-shader-101",
       "url": "https://github.com/googlefonts/compute-shader-101",
       "category": "LEARN",
@@ -1503,6 +1509,12 @@
       "url": "https://github.com/MisterBooo/LeetCodeAnimation",
       "category": "LEARN",
       "description": "Animated explanations of LeetCode problem-solving techniques."
+    },
+    {
+      "repo": "mitos-editor/mitos",
+      "url": "https://github.com/mitos-editor/mitos",
+      "category": "EDITORS",
+      "description": "A Helix-derived modal text editor with built-in LSP and tree-sitter support."
     },
     {
       "repo": "mixn/carbon-now-cli",
