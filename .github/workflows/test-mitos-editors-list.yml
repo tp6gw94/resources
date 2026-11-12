@@ -1,0 +1,253 @@
+name: Test fixed Mitos Editors list assignment
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: fixed-mitos-editors-list
+  cancel-in-progress: false
+
+jobs:
+  assign:
+    if: github.repository == 'tp6gw94/resources' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Assign only Mitos and verify all memberships
+        env:
+          GH_LISTS_TOKEN: ${{ secrets.GH_LISTS_TOKEN }}
+        shell: bash
+        run: |
+          set +x
+          python3 - <<'PYTHON'
+          import json
+          import os
+          import sys
+          import urllib.error
+          import urllib.request
+          
+          REPO_ID = "R_kgDOUFXtiQ"
+          TARGET_ID = "UL_kwDOBD60-s4AgDU4"
+          EXPECTED_LOGIN = "tp6gw94"
+          MUTATION = "mutation($input:UpdateUserListsForItemInput!){updateUserListsForItem(input:$input){user{login} item{... on Repository{id}} lists{id}}}"
+          
+          
+          class Failure(Exception):
+              pass
+          
+          
+          def check(label, condition):
+              print(label + ": " + ("PASS" if condition else "FAIL"), flush=True)
+              if not condition:
+                  raise Failure("CHECK_FAILED")
+          
+          
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+          
+          
+          class Client:
+              def __init__(self, secret):
+                  self.secret = secret
+                  self.opener = urllib.request.build_opener(NoRedirect)
+          
+              def request(self, path, data=None, credential=None):
+                  if path not in ("/user", "/graphql"):
+                      raise Failure("ENDPOINT_NOT_ALLOWED")
+                  payload = None if data is None else json.dumps(data).encode("utf-8")
+                  request = urllib.request.Request(
+                      "https://api.github.com" + path,
+                      data=payload,
+                      headers={
+                          "Authorization": "Bearer " + (self.secret if credential is None else credential),
+                          "Accept": "application/vnd.github+json",
+                          "X-GitHub-Api-Version": "2022-11-28",
+                          "Content-Type": "application/json",
+                          "User-Agent": "resources-fixed-mitos-single-assignment",
+                      },
+                  )
+                  try:
+                      with self.opener.open(request, timeout=30) as response:
+                          return response.status, json.load(response)
+                  except urllib.error.HTTPError as error:
+                      return error.code, {}
+                  except Exception:
+                      raise Failure("TRANSPORT_OR_RESPONSE_ERROR") from None
+          
+              def graphql(self, query, variables=None):
+                  status, body = self.request("/graphql", {"query": query, "variables": variables or {}})
+                  if status != 200:
+                      raise Failure("HTTP_" + str(status))
+                  if not isinstance(body, dict) or body.get("errors") or not isinstance(body.get("data"), dict):
+                      errors = body.get("errors", []) if isinstance(body, dict) else []
+                      forbidden = any(isinstance(error, dict) and error.get("type") == "FORBIDDEN" for error in errors)
+                      raise Failure("FORBIDDEN" if forbidden else "GRAPHQL_ERROR")
+                  return body["data"]
+          
+          
+          def catalog(client):
+              query = "query($after:String){viewer{login lists(first:100,after:$after){totalCount pageInfo{hasNextPage endCursor} nodes{id name slug isPrivate}}} repository(owner:\"mitos-editor\",name:\"mitos\"){id nameWithOwner isPrivate isArchived viewerHasStarred}}"
+              result = {}
+              cursor = None
+              seen = set()
+              while True:
+                  data = client.graphql(query, {"after": cursor})
+                  if data["viewer"]["login"] != EXPECTED_LOGIN:
+                      raise Failure("IDENTITY_CHANGED")
+                  repo = data["repository"]
+                  if not repo or repo["id"] != REPO_ID or repo["nameWithOwner"] != "mitos-editor/mitos" or repo["isPrivate"] or repo["isArchived"] or not repo["viewerHasStarred"]:
+                      raise Failure("FIXED_REPOSITORY_NO_LONGER_APPLICABLE")
+                  connection = data["viewer"]["lists"]
+                  for entry in connection["nodes"]:
+                      if entry["id"] in result:
+                          raise Failure("DUPLICATE_LIST_DURING_PAGINATION")
+                      result[entry["id"]] = entry
+                  if not connection["pageInfo"]["hasNextPage"]:
+                      break
+                  cursor = connection["pageInfo"]["endCursor"]
+                  if not cursor or cursor in seen:
+                      raise Failure("LIST_PAGINATION_CURSOR_INVALID")
+                  seen.add(cursor)
+              if len(result) != connection["totalCount"]:
+                  raise Failure("LIST_COUNT_CHANGED_DURING_PAGINATION")
+              target = result.get(TARGET_ID)
+              if not target or target["name"] != "Editors & LSP" or target["slug"] != "editors-lsp":
+                  raise Failure("FIXED_TARGET_LIST_CHANGED")
+              return result
+          
+          
+          def snapshot(client):
+              entries = catalog(client)
+              members = {}
+              query = "query($id:ID!,$after:String){node(id:$id){... on UserList{id items(first:100,after:$after){totalCount pageInfo{hasNextPage endCursor} nodes{__typename ... on Repository{id}}}}}}"
+              for list_id in sorted(entries):
+                  ids = set()
+                  cursor = None
+                  seen = set()
+                  while True:
+                      node = client.graphql(query, {"id": list_id, "after": cursor})["node"]
+                      if not node or node["id"] != list_id:
+                          raise Failure("LIST_DISAPPEARED")
+                      connection = node["items"]
+                      for entry in connection["nodes"]:
+                          if not entry or entry.get("__typename") != "Repository" or entry["id"] in ids:
+                              raise Failure("LIST_ITEMS_CHANGED_OR_UNSUPPORTED")
+                          ids.add(entry["id"])
+                      if not connection["pageInfo"]["hasNextPage"]:
+                          break
+                      cursor = connection["pageInfo"]["endCursor"]
+                      if not cursor or cursor in seen:
+                          raise Failure("ITEM_PAGINATION_CURSOR_INVALID")
+                      seen.add(cursor)
+                  if len(ids) != connection["totalCount"]:
+                      raise Failure("ITEM_COUNT_CHANGED_DURING_PAGINATION")
+                  members[list_id] = ids
+              if catalog(client) != entries:
+                  raise Failure("CATALOG_CHANGED_DURING_SNAPSHOT")
+              return {"catalog": entries, "members": members}
+          
+          
+          def public_star_ids(client):
+              query = "query($after:String){viewer{login starredRepositories(first:100,after:$after){totalCount pageInfo{hasNextPage endCursor} nodes{id isPrivate}}}}"
+              all_ids = set()
+              public = set()
+              cursor = None
+              seen = set()
+              while True:
+                  viewer = client.graphql(query, {"after": cursor})["viewer"]
+                  if viewer["login"] != EXPECTED_LOGIN:
+                      raise Failure("IDENTITY_CHANGED")
+                  connection = viewer["starredRepositories"]
+                  for entry in connection["nodes"]:
+                      if not entry or entry["id"] in all_ids:
+                          raise Failure("STARS_CHANGED_DURING_PAGINATION")
+                      all_ids.add(entry["id"])
+                      if not entry["isPrivate"]:
+                          public.add(entry["id"])
+                  if not connection["pageInfo"]["hasNextPage"]:
+                      break
+                  cursor = connection["pageInfo"]["endCursor"]
+                  if not cursor or cursor in seen:
+                      raise Failure("STARS_PAGINATION_CURSOR_INVALID")
+                  seen.add(cursor)
+              if len(all_ids) != connection["totalCount"]:
+                  raise Failure("STARS_COUNT_CHANGED_DURING_PAGINATION")
+              return public
+          
+          
+          def memberships(state):
+              return {list_id for list_id, ids in state["members"].items() if REPO_ID in ids}
+          
+          
+          def assign_once(client):
+              public = public_star_ids(client)
+              check("All public Stars paginated and fixed repo present", REPO_ID in public)
+              before = snapshot(client)
+              print("Baseline public Stars: " + str(len(public)), flush=True)
+              print("Baseline Lists: " + str(len(before["catalog"])), flush=True)
+              print("Baseline memberships: " + str(sum(map(len, before["members"].values()))), flush=True)
+              current = memberships(before)
+              if TARGET_ID in current:
+                  print("Already in fixed target: NO-OP; mutation not sent", flush=True)
+                  return
+              main_ids = {key for key, entry in before["catalog"].items() if entry["slug"] != "inspiration"}
+              check("Fixed repo has no existing main classification", not (current & main_ids))
+              desired = current | {TARGET_ID}
+              expected_members = {key: set(ids) for key, ids in before["members"].items()}
+              expected_members[TARGET_ID].add(REPO_ID)
+              latest = snapshot(client)
+              check("Immediate complete prewrite snapshot unchanged", latest == before)
+              print("CAS unavailable; a race remains between the final read and mutation.", flush=True)
+              print("Mutation attempts: 1", flush=True)
+              try:
+                  response = client.graphql(MUTATION, {"input": {"itemId": REPO_ID, "listIds": sorted(desired)}}).get("updateUserListsForItem")
+              except Exception as error:
+                  code = str(error) if isinstance(error, Failure) else "UNEXPECTED_RESPONSE"
+                  print("Mutation response: FAIL; " + code, flush=True)
+                  try:
+                      observed = snapshot(client)
+                      if observed == before:
+                          print("Mutation failure readback: UNCHANGED", flush=True)
+                      elif observed == {"catalog": before["catalog"], "members": expected_members}:
+                          print("Mutation failure readback: DESIRED_UNION; no retry", flush=True)
+                      else:
+                          print("Mutation failure readback: UNEXPECTED_CHANGE; no retry or rollback", flush=True)
+                  except Exception:
+                      print("Mutation failure readback: UNAVAILABLE; no retry", flush=True)
+                  raise Failure("MUTATION_FAILED_OR_UNCERTAIN") from None
+              response_ok = isinstance(response, dict) and isinstance(response.get("user"), dict) and isinstance(response.get("item"), dict) and isinstance(response.get("lists"), list) and response["user"].get("login") == EXPECTED_LOGIN and response["item"].get("id") == REPO_ID and all(isinstance(entry, dict) and "id" in entry for entry in response["lists"]) and {entry["id"] for entry in response["lists"]} == desired
+              print("Mutation response matches fixed union: " + ("PASS" if response_ok else "FAIL"), flush=True)
+              after = snapshot(client)
+              check("Complete readback memberships equal original union", memberships(after) == desired)
+              check("All other repo memberships preserved exactly", after["members"] == expected_members)
+              check("List catalog preserved exactly", after["catalog"] == before["catalog"])
+              check("Mutation response validated", response_ok)
+              print("Final target member count: " + str(len(after["members"][TARGET_ID])), flush=True)
+              print("Single fixed-repo assignment verified; no other mutation sent.", flush=True)
+          
+          
+          def main():
+              check("Manual workflow and repository guard", os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch" and os.environ.get("GITHUB_REPOSITORY") == "tp6gw94/resources" and os.environ.get("GITHUB_REF") == "refs/heads/main")
+              secret = os.environ.get("GH_LISTS_TOKEN", "")
+              check("Actions secret available", bool(secret.strip()))
+              client = Client(secret)
+              status, _ = client.request("/user", credential="deliberately-invalid-auth-control")
+              check("Invalid credential rejected", status == 401)
+              status, profile = client.request("/user")
+              check("Token authenticates expected account", status == 200 and profile.get("login") == EXPECTED_LOGIN)
+              assign_once(client)
+          
+          
+          if __name__ == "__main__":
+              try:
+                  main()
+              except Failure as error:
+                  print("Stopped without retry or rollback: " + str(error), flush=True)
+                  sys.exit(1)
+              except Exception:
+                  print("Stopped on unexpected response; no retry or rollback. Read back before any future action.", flush=True)
+                  sys.exit(1)
+          PYTHON
