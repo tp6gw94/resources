@@ -1,0 +1,284 @@
+name: Classify reviewed public Stars batch
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: resources-reviewed-stars-batch
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    if: github.repository == 'tp6gw94/resources' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Classify only reviewed public Stars and verify each update
+        env:
+          GH_LISTS_TOKEN: ${{ secrets.GH_LISTS_TOKEN }}
+        shell: bash
+        run: |
+          set +x
+          python3 - <<'PYTHON'
+          import json
+          import os
+          import sys
+          import time
+          import urllib.error
+          import urllib.request
+          
+          PLAN = [{'repo': 'GoogleChrome/modern-web-guidance', 'repo_id': 'R_kgDORutKXA', 'target_id': 'UL_kwDOBD60-s4AZSpn', 'target_name': 'AI Coding & Skills', 'target_slug': 'ai-coding-skills'}, {'repo': 'herdrdev/herdr-app', 'repo_id': 'R_kgDOVMvknA', 'target_id': 'UL_kwDOBD60-s4AZSpn', 'target_name': 'AI Coding & Skills', 'target_slug': 'ai-coding-skills'}, {'repo': 'jub0t/Concat', 'repo_id': 'R_kgDOUEHx5A', 'target_id': 'UL_kwDOBD60-s4AjXHW', 'target_name': 'Design & Media', 'target_slug': 'design-media'}, {'repo': 'Graphify-Labs/graphify', 'repo_id': 'R_kgDOR4-pDw', 'target_id': 'UL_kwDOBD60-s4AZSpn', 'target_name': 'AI Coding & Skills', 'target_slug': 'ai-coding-skills'}, {'repo': 'google/elephant-goldfish-model', 'repo_id': 'R_kgDOUZMgZg', 'target_id': 'UL_kwDOBD60-s4AZSpn', 'target_name': 'AI Coding & Skills', 'target_slug': 'ai-coding-skills'}, {'repo': 'OpenCut-app/OpenCut', 'repo_id': 'R_kgDOO_yqIA', 'target_id': 'UL_kwDOBD60-s4AjXHW', 'target_name': 'Design & Media', 'target_slug': 'design-media'}]
+          EXPECTED_TAXONOMY = {'AI Coding & Skills', 'Dev Tools & Testing', '✨ Inspiration', 'Emacs', 'LLM & AI Engineering', 'AI Apps & Automation', 'Desktop & OS', 'Frontend & UI', 'Infra & Self-hosting', 'Notes & Publishing', 'Design & Media', 'CLI & Terminal', 'Neovim & Vim', 'Editors & LSP', 'CS & Learning'}
+          EXPECTED_LOGIN = "tp6gw94"
+          MUTATION = "mutation($input:UpdateUserListsForItemInput!){updateUserListsForItem(input:$input){user{login} item{... on Repository{id}} lists{id}}}"
+          
+          
+          class Failure(Exception):
+              pass
+          
+          
+          def check(label, condition):
+              print(label + ": " + ("PASS" if condition else "FAIL"), flush=True)
+              if not condition:
+                  raise Failure("CHECK_FAILED")
+          
+          
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+          
+          
+          class Client:
+              def __init__(self, secret):
+                  self.secret = secret
+                  self.last_request = 0.0
+                  self.opener = urllib.request.build_opener(NoRedirect)
+          
+              def request(self, path, data=None, credential=None):
+                  if path not in ("/user", "/graphql"):
+                      raise Failure("ENDPOINT_NOT_ALLOWED")
+                  payload = None if data is None else json.dumps(data).encode("utf-8")
+                  request = urllib.request.Request(
+                      "https://api.github.com" + path,
+                      data=payload,
+                      headers={
+                          "Authorization": "Bearer " + (self.secret if credential is None else credential),
+                          "Accept": "application/vnd.github+json",
+                          "X-GitHub-Api-Version": "2022-11-28",
+                          "Content-Type": "application/json",
+                          "User-Agent": "resources-reviewed-public-stars-batch",
+                      },
+                  )
+                  delay = 0.5 - (time.monotonic() - self.last_request)
+                  if delay > 0:
+                      time.sleep(delay)
+                  self.last_request = time.monotonic()
+                  try:
+                      with self.opener.open(request, timeout=30) as response:
+                          return response.status, json.load(response)
+                  except urllib.error.HTTPError as error:
+                      return error.code, {}
+                  except Exception:
+                      raise Failure("TRANSPORT_OR_RESPONSE_ERROR") from None
+          
+              def graphql(self, query, variables=None):
+                  status, body = self.request("/graphql", {"query": query, "variables": variables or {}})
+                  if status != 200:
+                      raise Failure("HTTP_" + str(status))
+                  if not isinstance(body, dict) or body.get("errors") or not isinstance(body.get("data"), dict):
+                      errors = body.get("errors", []) if isinstance(body, dict) else []
+                      forbidden = any(isinstance(error, dict) and error.get("type") == "FORBIDDEN" for error in errors)
+                      raise Failure("FORBIDDEN" if forbidden else "GRAPHQL_ERROR")
+                  return body["data"]
+          
+          
+          def catalog(client):
+              query = "query($after:String){viewer{login lists(first:100,after:$after){totalCount pageInfo{hasNextPage endCursor} nodes{id name slug description isPrivate}}}}"
+              result = {}
+              cursor = None
+              seen = set()
+              while True:
+                  data = client.graphql(query, {"after": cursor})
+                  if data["viewer"]["login"] != EXPECTED_LOGIN:
+                      raise Failure("IDENTITY_CHANGED")
+                  connection = data["viewer"]["lists"]
+                  for entry in connection["nodes"]:
+                      if entry["id"] in result:
+                          raise Failure("DUPLICATE_LIST_DURING_PAGINATION")
+                      result[entry["id"]] = entry
+                  if not connection["pageInfo"]["hasNextPage"]:
+                      break
+                  cursor = connection["pageInfo"]["endCursor"]
+                  if not cursor or cursor in seen:
+                      raise Failure("LIST_PAGINATION_CURSOR_INVALID")
+                  seen.add(cursor)
+              if len(result) != connection["totalCount"]:
+                  raise Failure("LIST_COUNT_CHANGED_DURING_PAGINATION")
+              if {entry["name"] for entry in result.values()} != EXPECTED_TAXONOMY:
+                  raise Failure("TAXONOMY_CHANGED")
+              for entry in PLAN:
+                  target = result.get(entry["target_id"])
+                  if not target or target["name"] != entry["target_name"] or target["slug"] != entry["target_slug"]:
+                      raise Failure("REVIEWED_TARGET_CHANGED")
+              return result
+          
+          def snapshot(client):
+              entries = catalog(client)
+              members = {}
+              query = "query($id:ID!,$after:String){node(id:$id){... on UserList{id items(first:100,after:$after){totalCount pageInfo{hasNextPage endCursor} nodes{__typename ... on Repository{id}}}}}}"
+              for list_id in sorted(entries):
+                  ids = set()
+                  cursor = None
+                  seen = set()
+                  while True:
+                      node = client.graphql(query, {"id": list_id, "after": cursor})["node"]
+                      if not node or node["id"] != list_id:
+                          raise Failure("LIST_DISAPPEARED")
+                      connection = node["items"]
+                      for entry in connection["nodes"]:
+                          if not entry or entry.get("__typename") != "Repository" or entry["id"] in ids:
+                              raise Failure("LIST_ITEMS_CHANGED_OR_UNSUPPORTED")
+                          ids.add(entry["id"])
+                      if not connection["pageInfo"]["hasNextPage"]:
+                          break
+                      cursor = connection["pageInfo"]["endCursor"]
+                      if not cursor or cursor in seen:
+                          raise Failure("ITEM_PAGINATION_CURSOR_INVALID")
+                      seen.add(cursor)
+                  if len(ids) != connection["totalCount"]:
+                      raise Failure("ITEM_COUNT_CHANGED_DURING_PAGINATION")
+                  members[list_id] = ids
+              if catalog(client) != entries:
+                  raise Failure("CATALOG_CHANGED_DURING_SNAPSHOT")
+              return {"catalog": entries, "members": members}
+          
+          
+          def public_star_ids(client):
+              query = "query($after:String){viewer{login starredRepositories(first:100,after:$after){totalCount pageInfo{hasNextPage endCursor} nodes{id isPrivate}}}}"
+              all_ids = set()
+              public = set()
+              cursor = None
+              seen = set()
+              while True:
+                  viewer = client.graphql(query, {"after": cursor})["viewer"]
+                  if viewer["login"] != EXPECTED_LOGIN:
+                      raise Failure("IDENTITY_CHANGED")
+                  connection = viewer["starredRepositories"]
+                  for entry in connection["nodes"]:
+                      if not entry or entry["id"] in all_ids:
+                          raise Failure("STARS_CHANGED_DURING_PAGINATION")
+                      all_ids.add(entry["id"])
+                      if not entry["isPrivate"]:
+                          public.add(entry["id"])
+                  if not connection["pageInfo"]["hasNextPage"]:
+                      break
+                  cursor = connection["pageInfo"]["endCursor"]
+                  if not cursor or cursor in seen:
+                      raise Failure("STARS_PAGINATION_CURSOR_INVALID")
+                  seen.add(cursor)
+              if len(all_ids) != connection["totalCount"]:
+                  raise Failure("STARS_COUNT_CHANGED_DURING_PAGINATION")
+              return public
+          
+          
+          def memberships(state, repo_id):
+              return {key for key, ids in state["members"].items() if repo_id in ids}
+          
+          
+          def assert_repo(client, entry):
+              data = client.graphql("query($id:ID!){viewer{login} node(id:$id){... on Repository{id nameWithOwner isPrivate viewerHasStarred}}}", {"id": entry["repo_id"]})
+              repo = data["node"]
+              if data["viewer"]["login"] != EXPECTED_LOGIN or not repo or repo["id"] != entry["repo_id"] or repo["nameWithOwner"] != entry["repo"] or repo["isPrivate"] or not repo["viewerHasStarred"]:
+                  raise Failure("REVIEWED_REPOSITORY_NO_LONGER_PUBLIC_STAR")
+          
+          
+          def checkpoint(entry, status):
+              print("CHECKPOINT " + json.dumps({"repo": entry["repo"], "target": entry["target_name"], "status": status}, sort_keys=True), flush=True)
+          
+          
+          def assign_batch(client):
+              public = public_star_ids(client)
+              initial = snapshot(client)
+              expected = initial
+              print("Baseline public Stars: " + str(len(public)), flush=True)
+              print("Baseline Lists: " + str(len(initial["catalog"])), flush=True)
+              print("Baseline memberships: " + str(sum(map(len, initial["members"].values()))), flush=True)
+              print("CAS unavailable; a race remains between each final read and mutation.", flush=True)
+              added = 0
+              for entry in PLAN:
+                  if entry["repo_id"] not in public:
+                      checkpoint(entry, "skipped_not_public_star")
+                      continue
+                  assert_repo(client, entry)
+                  before = snapshot(client)
+                  check("Full state unchanged since preceding checkpoint", before == expected)
+                  current = memberships(before, entry["repo_id"])
+                  main_ids = {key for key, value in before["catalog"].items() if value["slug"] != "inspiration"}
+                  if current & main_ids:
+                      checkpoint(entry, "no_op_existing_classification")
+                      continue
+                  desired = current | {entry["target_id"]}
+                  desired_state = {"catalog": before["catalog"], "members": {key: set(ids) for key, ids in before["members"].items()}}
+                  desired_state["members"][entry["target_id"]].add(entry["repo_id"])
+                  assert_repo(client, entry)
+                  latest = snapshot(client)
+                  check("Immediate complete prewrite snapshot unchanged", latest == before)
+                  print("ATTEMPT " + json.dumps({"repo": entry["repo"], "mutation_attempts": 1}), flush=True)
+                  try:
+                      response = client.graphql(MUTATION, {"input": {"itemId": entry["repo_id"], "listIds": sorted(desired)}}).get("updateUserListsForItem")
+                  except Exception as error:
+                      code = str(error) if isinstance(error, Failure) else "UNEXPECTED_RESPONSE"
+                      print("Mutation response: FAIL; " + code, flush=True)
+                      try:
+                          observed = snapshot(client)
+                          outcome = "UNCHANGED" if observed == before else "DESIRED_UNION" if observed == desired_state else "UNEXPECTED_CHANGE"
+                          checkpoint(entry, "stopped_readback_" + outcome)
+                      except Exception:
+                          checkpoint(entry, "stopped_readback_UNAVAILABLE")
+                      raise Failure("MUTATION_FAILED_OR_UNCERTAIN_NO_RETRY") from None
+                  response_ok = isinstance(response, dict) and isinstance(response.get("user"), dict) and isinstance(response.get("item"), dict) and isinstance(response.get("lists"), list) and response["user"].get("login") == EXPECTED_LOGIN and response["item"].get("id") == entry["repo_id"] and all(isinstance(value, dict) and "id" in value for value in response["lists"]) and {value["id"] for value in response["lists"]} == desired
+                  after = snapshot(client)
+                  check("Complete readback equals existing memberships union target", memberships(after, entry["repo_id"]) == desired)
+                  check("All other memberships and list metadata preserved exactly", after == desired_state)
+                  check("Mutation response validated", response_ok)
+                  expected = after
+                  added += 1
+                  checkpoint(entry, "added_and_verified")
+                  time.sleep(2)
+              final = snapshot(client)
+              check("Final complete Lists readback matches all checkpoints", final == expected)
+              final_public = public_star_ids(client)
+              check("All public Stars preserved", final_public == public)
+              main = {repo_id for key, ids in final["members"].items() if final["catalog"][key]["slug"] != "inspiration" for repo_id in ids}
+              print("Verified additions: " + str(added), flush=True)
+              print("Remaining unclassified public Stars: " + str(len(final_public - main)), flush=True)
+              print("Final memberships: " + str(sum(map(len, final["members"].values()))), flush=True)
+              print("One reviewed batch complete; no schedule or credential changes.", flush=True)
+          
+          
+          def main():
+              check("Manual workflow and repository guard", os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch" and os.environ.get("GITHUB_REPOSITORY") == "tp6gw94/resources" and os.environ.get("GITHUB_REF") == "refs/heads/main")
+              secret = os.environ.get("GH_LISTS_TOKEN", "")
+              check("Actions secret available", bool(secret.strip()))
+              client = Client(secret)
+              status, _ = client.request("/user", credential="deliberately-invalid-auth-control")
+              check("Invalid credential rejected", status == 401)
+              status, profile = client.request("/user")
+              check("Token authenticates expected account", status == 200 and profile.get("login") == EXPECTED_LOGIN)
+              assign_batch(client)
+          
+          
+          if __name__ == "__main__":
+              try:
+                  main()
+              except Failure as error:
+                  print("Stopped without retry or rollback: " + str(error), flush=True)
+                  sys.exit(1)
+              except Exception:
+                  print("Stopped on unexpected response; read back before any future action. No retry or rollback.", flush=True)
+                  sys.exit(1)
+          
+          
+          PYTHON
