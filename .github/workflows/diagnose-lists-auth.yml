@@ -1,0 +1,75 @@
+name: Diagnose Lists authentication (read-only)
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check authentication and Lists read access
+        env:
+          GH_LISTS_TOKEN: ${{ secrets.GH_LISTS_TOKEN }}
+        shell: bash
+        run: |
+          set +x
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.error
+          import urllib.request
+
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+
+          opener = urllib.request.build_opener(NoRedirect)
+
+          def check(label, ok):
+              print(label + ": " + ("PASS" if ok else "FAIL"), flush=True)
+              if not ok:
+                  sys.exit(1)
+
+          def request(path, token, data=None):
+              payload = None if data is None else json.dumps(data).encode("utf-8")
+              req = urllib.request.Request(
+                  "https://api.github.com" + path,
+                  data=payload,
+                  headers={
+                      "Authorization": "Bearer " + token,
+                      "Accept": "application/vnd.github+json",
+                      "X-GitHub-Api-Version": "2022-11-28",
+                      "User-Agent": "resources-read-only-auth-diagnostic",
+                      "Content-Type": "application/json",
+                  },
+              )
+              try:
+                  with opener.open(req, timeout=30) as response:
+                      return response.status, json.load(response)
+              except urllib.error.HTTPError as error:
+                  return error.code, {}
+              except Exception:
+                  return 0, {}
+
+          token = os.environ.get("GH_LISTS_TOKEN", "")
+          check("Actions secret available", bool(token.strip()))
+          status, _ = request("/user", "deliberately-invalid-auth-control")
+          check("Invalid credential rejected", status == 401)
+          status, profile = request("/user", token)
+          check("Token authenticates expected account",
+                status == 200 and profile.get("login") == "tp6gw94")
+          query = {"query": "query { viewer { login lists(first: 1) { totalCount } } }"}
+          status, result = request("/graphql", token, query)
+          viewer = result.get("data", {}).get("viewer", {}) if isinstance(result.get("data"), dict) else {}
+          lists = viewer.get("lists")
+          check("Lists read access",
+                status == 200 and not result.get("errors")
+                and viewer.get("login") == "tp6gw94"
+                and isinstance(lists, dict)
+                and isinstance(lists.get("totalCount"), int))
+          print("Read-only checks complete; Lists write access was NOT tested.", flush=True)
+          PY
