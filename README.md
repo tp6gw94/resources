@@ -4,10 +4,10 @@ A categorized collection of my starred GitHub projects, with short English descr
 
 ## Contents
 
-- [AI Coding & Skills](#ai-coding--skills) (57)
-- [AI Apps & Automation](#ai-apps--automation) (17)
+- [AI Coding & Skills](#ai-coding--skills) (58)
+- [AI Apps & Automation](#ai-apps--automation) (18)
 - [LLM & AI Engineering](#llm--ai-engineering) (39)
-- [Frontend & UI](#frontend--ui) (33)
+- [Frontend & UI](#frontend--ui) (34)
 - [Dev Tools & Testing](#dev-tools--testing) (17)
 - [Emacs](#emacs) (46)
 - [Neovim & Vim](#neovim--vim) (75)
@@ -16,7 +16,7 @@ A categorized collection of my starred GitHub projects, with short English descr
 - [Notes & Publishing](#notes--publishing) (32)
 - [Desktop & OS](#desktop--os) (29)
 - [Infra & Self-hosting](#infra--self-hosting) (7)
-- [CS & Learning](#cs--learning) (51)
+- [CS & Learning](#cs--learning) (52)
 - [Design & Media](#design--media) (14)
 
 ## About this collection
@@ -38,6 +38,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [anthropics/skills](https://github.com/anthropics/skills) — Public repository for Agent Skills.
 - [awslabs/cli-agent-orchestrator](https://github.com/awslabs/cli-agent-orchestrator) — Multi-agent orchestration for AI coding CLIs — Claude Code, Kiro, Codex, and more, coordinated in isolated tmux sessions.
 - [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) — A skill to stop your coding agent from burying the answer. ADHD-friendly output.
+- [backnotprop/plannotator](https://github.com/backnotprop/plannotator) — A local review workspace for annotating agent plans, documents, and code changes.
 - [backnotprop/pstack](https://github.com/backnotprop/pstack) — Use pstack with claude, codex, pi - Skills and principles for rigorous AI-assisted engineering.
 - [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) — A structured agent workflow for software planning and development.
 - [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) — Agent skills for creating diagrams as self-contained HTML and SVG.
@@ -105,6 +106,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [OpenMontageInc/OpenMontage](https://github.com/OpenMontageInc/OpenMontage) — An agent-based video production system with reusable tools and workflows.
 - [OpenWhispr/openwhispr](https://github.com/OpenWhispr/openwhispr) — Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cross-platform.
 - [sigoden/aichat](https://github.com/sigoden/aichat) — All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.
+- [simplexai-labs/linger](https://github.com/simplexai-labs/linger) — A local personal AI agent for running models and automating tasks on a PC.
 - [thesysdev/open-intelligent-ui](https://github.com/thesysdev/open-intelligent-ui) — OpenUI-based chat demo that renders streamed answers as interactive maps, charts, images, and tools.
 
 ## LLM & AI Engineering
@@ -159,6 +161,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [gvergnaud/hotscript](https://github.com/gvergnaud/hotscript) — A library of composable functions for the type-level! Transform your TypeScript types in any way you want using functions you already know.
 - [gvergnaud/ts-pattern](https://github.com/gvergnaud/ts-pattern) — The exhaustive Pattern Matching library for TypeScript, with smart type inference.
 - [hakimel/reveal.js](https://github.com/hakimel/reveal.js) — The HTML Presentation Framework.
+- [ivarvong/mpl](https://github.com/ivarvong/mpl) — A JavaScript plotting library that reproduces matplotlib rendering in Node.js, browsers, and Cloudflare Workers.
 - [longbridge/gpui-kit](https://github.com/longbridge/gpui-kit) — Rust GUI components for building fantastic cross-platform desktop application by using GPUI.
 - [microsoft/typescript-go](https://github.com/microsoft/typescript-go) — Staging repo for development of native port of TypeScript.
 - [module-federation/core](https://github.com/module-federation/core) — Module Federation is a concept that allows developers to share code and resources across multiple JavaScript applications.
@@ -504,6 +507,7 @@ The collection is reviewed weekly alongside [my GitHub Stars](https://github.com
 - [Vonng/ddia](https://github.com/Vonng/ddia) — Chinese translations of Designing Data-Intensive Applications.
 - [web-padawan/awesome-web-components](https://github.com/web-padawan/awesome-web-components) — A curated list of awesome Web Components resources.
 - [wzhudev/reverse-linear-sync-engine](https://github.com/wzhudev/reverse-linear-sync-engine) — A reverse engineering of Linear's sync engine.
+- [yingang/aposd2e-zh](https://github.com/yingang/aposd2e-zh) — Chinese translation of A Philosophy of Software Design, second edition.
 - [zonble/understanding_audio_files](https://github.com/zonble/understanding_audio_files) — Chinese educational material explaining audio file formats.
 
 ## Design & Media

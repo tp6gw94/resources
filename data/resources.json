@@ -293,6 +293,12 @@
       "description": "EntityDB is an in-browser vector database wrapping indexedDB and Transformers.js over WebAssembly."
     },
     {
+      "repo": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "category": "AI-CODE",
+      "description": "A local review workspace for annotating agent plans, documents, and code changes."
+    },
+    {
       "repo": "backnotprop/pstack",
       "url": "https://github.com/backnotprop/pstack",
       "category": "AI-CODE",
@@ -1053,6 +1059,12 @@
       "url": "https://github.com/ibhagwan/fzf-lua",
       "category": "NVIM",
       "description": "Improved fzf.vim written in lua."
+    },
+    {
+      "repo": "ivarvong/mpl",
+      "url": "https://github.com/ivarvong/mpl",
+      "category": "FRONTEND",
+      "description": "A JavaScript plotting library that reproduces matplotlib rendering in Node.js, browsers, and Cloudflare Workers."
     },
     {
       "repo": "iwe-org/iwe",
@@ -2219,6 +2231,12 @@
       "description": "The malleable knowledge base for you and your team. Powered by Markdown and Lua."
     },
     {
+      "repo": "simplexai-labs/linger",
+      "url": "https://github.com/simplexai-labs/linger",
+      "category": "AI-APPS",
+      "description": "A local personal AI agent for running models and automating tasks on a PC."
+    },
+    {
       "repo": "simrat39/symbols-outline.nvim",
       "url": "https://github.com/simrat39/symbols-outline.nvim",
       "category": "NVIM",
@@ -2697,6 +2715,12 @@
       "url": "https://github.com/Yevgnen/ivy-rich",
       "category": "EMACS",
       "description": "More friendly interface for ivy."
+    },
+    {
+      "repo": "yingang/aposd2e-zh",
+      "url": "https://github.com/yingang/aposd2e-zh",
+      "category": "LEARN",
+      "description": "Chinese translation of A Philosophy of Software Design, second edition."
     },
     {
       "repo": "yzfly/Awesome-MCP-ZH",
